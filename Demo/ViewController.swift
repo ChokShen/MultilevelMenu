@@ -14,9 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.customView = CustomMenuView()
-//        let className = getClassName(self.customView)
-//        print(className)
 //        // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -45,13 +42,20 @@ class ViewController: UIViewController {
         option.rightBarButtonTitle = "ok"
         option.rightBarButtonColor = UIColor.red
         option.bottomButtonTitle = "ok"
-        option.bottomButtonBackgroundColor_Normal = UIColor.orange
-        let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, option: option, customView: CustomMenuView(), completion: { (resultString, model) in
+        let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, option: option, completion: { (resultString, model) in
             self.resultLabel.text = resultString
         })
         menu.show()
     }
 
+    @IBAction func customMenu(_ sender: Any) {
+        guard let path = Bundle.main.path(forResource:"businessType", ofType: "json") else { return }
+        let url = URL(fileURLWithPath: path)
+        let menu = MultilevelStyle2Menu(title: "行业类型", fileUrl: url, customView: CustomMenuView(), completion: { (resultString, model) in
+            self.resultLabel.text = resultString
+        })
+        menu.show()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

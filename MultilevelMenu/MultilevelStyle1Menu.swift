@@ -53,9 +53,9 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         } else {
             self.defalutOption = MultilevelMenuOption()
         }
-        layOut()
         self.completion = completion
         self.customMenuView = customView
+        layOut()
         setFirstDataSource()
     }
     
@@ -72,9 +72,9 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         } else {
             self.defalutOption = MultilevelMenuOption()
         }
-        layOut()
         self.completion = completion
         self.customMenuView = customView
+        layOut()
         setFirstDataSource()
     }
     

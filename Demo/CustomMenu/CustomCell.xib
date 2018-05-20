@@ -6,12 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomCell" customModule="MultilevelMenuDemo" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomCell" customModule="MultilevelMenu" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -19,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYG-4x-BAO">
-                        <rect key="frame" x="15" y="12" width="290" height="21"/>
+                        <rect key="frame" x="59" y="12" width="246" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvK-IC-bY0">
-                        <rect key="frame" x="15" y="43" width="290" height="0.5"/>
+                        <rect key="frame" x="59" y="43" width="246" height="0.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="owI-1m-wT1"/>
                         </constraints>
@@ -33,14 +34,23 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="China.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sbb-eG-P3e">
+                        <rect key="frame" x="15" y="13" width="29" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="9R1-hg-Jqp"/>
+                            <constraint firstAttribute="width" secondItem="Sbb-eG-P3e" secondAttribute="height" multiplier="29:19" id="i64-mx-its"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="QvK-IC-bY0" firstAttribute="trailing" secondItem="MYG-4x-BAO" secondAttribute="trailing" id="CG9-VI-tJx"/>
-                    <constraint firstItem="MYG-4x-BAO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="H7z-P1-Bym"/>
                     <constraint firstItem="QvK-IC-bY0" firstAttribute="leading" secondItem="MYG-4x-BAO" secondAttribute="leading" id="HAz-du-cat"/>
                     <constraint firstItem="MYG-4x-BAO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OTN-Cf-BnW"/>
+                    <constraint firstItem="MYG-4x-BAO" firstAttribute="leading" secondItem="Sbb-eG-P3e" secondAttribute="trailing" constant="15" id="RSI-Kd-AHA"/>
                     <constraint firstAttribute="bottom" secondItem="QvK-IC-bY0" secondAttribute="bottom" id="SbV-DL-K7z"/>
+                    <constraint firstItem="Sbb-eG-P3e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vmc-R3-RsG"/>
                     <constraint firstAttribute="trailing" secondItem="MYG-4x-BAO" secondAttribute="trailing" constant="15" id="ZJF-L8-RaS"/>
+                    <constraint firstItem="Sbb-eG-P3e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nqU-Ko-sXX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -50,4 +60,7 @@
             <point key="canvasLocation" x="-44" y="61"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="China.png" width="200" height="131"/>
+    </resources>
 </document>

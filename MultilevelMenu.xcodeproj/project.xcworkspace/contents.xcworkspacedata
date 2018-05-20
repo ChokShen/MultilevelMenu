@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MultilevelMenuDemo.xcodeproj">
+      location = "self:/Users/wall/Desktop/MultilevelMenuDemo /MultilevelMenu.xcodeproj">
    </FileRef>
 </Workspace>

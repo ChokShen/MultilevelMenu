@@ -11,6 +11,7 @@
 		4608868F20A9B5A300D1ADFD /* MultilevelStyle1Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608868D20A9B5A300D1ADFD /* MultilevelStyle1Menu.swift */; };
 		4608869120A9BF4D00D1ADFD /* MultilevelMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608869020A9BF4D00D1ADFD /* MultilevelMenuView.swift */; };
 		462D8B5420A47E9500AD5D41 /* MenuMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D8B5320A47E9500AD5D41 /* MenuMarco.swift */; };
+		464FB82F20B1B5380074605C /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 464FB82E20B1B5380074605C /* China.png */; };
 		469F5A5C20A084E000741DF3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F5A5A20A084E000741DF3 /* CustomCell.swift */; };
 		469F5A5D20A084E000741DF3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469F5A5B20A084E000741DF3 /* CustomCell.xib */; };
 		469F5A5F20A0856800741DF3 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F5A5E20A0856800741DF3 /* CustomMenuView.swift */; };
@@ -23,8 +24,8 @@
 		499C670C2092C48C00C36F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499C670A2092C48C00C36F75 /* Main.storyboard */; };
 		499C670E2092C49200C36F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499C670D2092C49200C36F75 /* Assets.xcassets */; };
 		499C67112092C49200C36F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499C670F2092C49200C36F75 /* LaunchScreen.storyboard */; };
-		499C671C2092C49200C36F75 /* MultilevelMenuDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C671B2092C49200C36F75 /* MultilevelMenuDemoTests.swift */; };
-		499C67272092C49200C36F75 /* MultilevelMenuDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C67262092C49200C36F75 /* MultilevelMenuDemoUITests.swift */; };
+		499C671C2092C49200C36F75 /* MultilevelMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C671B2092C49200C36F75 /* MultilevelMenuTests.swift */; };
+		499C67272092C49200C36F75 /* MultilevelMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C67262092C49200C36F75 /* MultilevelMenuUITests.swift */; };
 		499C67382092FAF100C36F75 /* MenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C67372092FAF100C36F75 /* MenuDataModel.swift */; };
 		499C673A2092FB0900C36F75 /* MultilevelMenuStyle2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C67392092FB0900C36F75 /* MultilevelMenuStyle2View.swift */; };
 		499C673C2092FB2800C36F75 /* MultilevelMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C673B2092FB2800C36F75 /* MultilevelMenuOption.swift */; };
@@ -54,6 +55,7 @@
 		4608868D20A9B5A300D1ADFD /* MultilevelStyle1Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStyle1Menu.swift; sourceTree = "<group>"; };
 		4608869020A9BF4D00D1ADFD /* MultilevelMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuView.swift; sourceTree = "<group>"; };
 		462D8B5320A47E9500AD5D41 /* MenuMarco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMarco.swift; sourceTree = "<group>"; };
+		464FB82E20B1B5380074605C /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
 		469F5A5A20A084E000741DF3 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		469F5A5B20A084E000741DF3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		469F5A5E20A0856800741DF3 /* CustomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
@@ -61,18 +63,18 @@
 		46D6987B20A9DE9F00674A5F /* btn_common_close_wh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_common_close_wh.png; sourceTree = "<group>"; };
 		46D6987C20A9DE9F00674A5F /* btn_common_close_wh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_common_close_wh@3x.png"; sourceTree = "<group>"; };
 		46D6987D20A9DE9F00674A5F /* btn_common_close_wh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_common_close_wh@2x.png"; sourceTree = "<group>"; };
-		499C67032092C48B00C36F75 /* MultilevelMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilevelMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C67032092C48B00C36F75 /* MultilevelMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilevelMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499C67062092C48B00C36F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		499C67082092C48B00C36F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		499C670B2092C48C00C36F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		499C670D2092C49200C36F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		499C67102092C49200C36F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		499C67122092C49200C36F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		499C67172092C49200C36F75 /* MultilevelMenuDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		499C671B2092C49200C36F75 /* MultilevelMenuDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuDemoTests.swift; sourceTree = "<group>"; };
+		499C67172092C49200C36F75 /* MultilevelMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C671B2092C49200C36F75 /* MultilevelMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuTests.swift; sourceTree = "<group>"; };
 		499C671D2092C49200C36F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		499C67222092C49200C36F75 /* MultilevelMenuDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		499C67262092C49200C36F75 /* MultilevelMenuDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuDemoUITests.swift; sourceTree = "<group>"; };
+		499C67222092C49200C36F75 /* MultilevelMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499C67262092C49200C36F75 /* MultilevelMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuUITests.swift; sourceTree = "<group>"; };
 		499C67282092C49200C36F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		499C67372092FAF100C36F75 /* MenuDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDataModel.swift; sourceTree = "<group>"; };
 		499C67392092FB0900C36F75 /* MultilevelMenuStyle2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuStyle2View.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		469F5A5920A0846F00741DF3 /* CustomMenu */ = {
 			isa = PBXGroup;
 			children = (
+				464FB82E20B1B5380074605C /* China.png */,
 				469F5A5A20A084E000741DF3 /* CustomCell.swift */,
 				469F5A5B20A084E000741DF3 /* CustomCell.xib */,
 				469F5A5E20A0856800741DF3 /* CustomMenuView.swift */,
@@ -129,9 +132,10 @@
 		499C66FA2092C48B00C36F75 = {
 			isa = PBXGroup;
 			children = (
-				499C67052092C48B00C36F75 /* MultilevelMenuDemo */,
-				499C671A2092C49200C36F75 /* MultilevelMenuDemoTests */,
-				499C67252092C49200C36F75 /* MultilevelMenuDemoUITests */,
+				499C67362092FACE00C36F75 /* MultilevelMenu */,
+				499C67052092C48B00C36F75 /* Demo */,
+				499C671A2092C49200C36F75 /* MultilevelMenuTests */,
+				499C67252092C49200C36F75 /* MultilevelMenuUITests */,
 				499C67042092C48B00C36F75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,17 +143,16 @@
 		499C67042092C48B00C36F75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				499C67032092C48B00C36F75 /* MultilevelMenuDemo.app */,
-				499C67172092C49200C36F75 /* MultilevelMenuDemoTests.xctest */,
-				499C67222092C49200C36F75 /* MultilevelMenuDemoUITests.xctest */,
+				499C67032092C48B00C36F75 /* MultilevelMenu.app */,
+				499C67172092C49200C36F75 /* MultilevelMenuTests.xctest */,
+				499C67222092C49200C36F75 /* MultilevelMenuUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		499C67052092C48B00C36F75 /* MultilevelMenuDemo */ = {
+		499C67052092C48B00C36F75 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				499C67362092FACE00C36F75 /* MultilevelMenu */,
 				469F5A5920A0846F00741DF3 /* CustomMenu */,
 				499C67062092C48B00C36F75 /* AppDelegate.swift */,
 				499C67082092C48B00C36F75 /* ViewController.swift */,
@@ -159,25 +162,25 @@
 				499C670F2092C49200C36F75 /* LaunchScreen.storyboard */,
 				499C67122092C49200C36F75 /* Info.plist */,
 			);
-			path = MultilevelMenuDemo;
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		499C671A2092C49200C36F75 /* MultilevelMenuDemoTests */ = {
+		499C671A2092C49200C36F75 /* MultilevelMenuTests */ = {
 			isa = PBXGroup;
 			children = (
-				499C671B2092C49200C36F75 /* MultilevelMenuDemoTests.swift */,
+				499C671B2092C49200C36F75 /* MultilevelMenuTests.swift */,
 				499C671D2092C49200C36F75 /* Info.plist */,
 			);
-			path = MultilevelMenuDemoTests;
+			path = MultilevelMenuTests;
 			sourceTree = "<group>";
 		};
-		499C67252092C49200C36F75 /* MultilevelMenuDemoUITests */ = {
+		499C67252092C49200C36F75 /* MultilevelMenuUITests */ = {
 			isa = PBXGroup;
 			children = (
-				499C67262092C49200C36F75 /* MultilevelMenuDemoUITests.swift */,
+				499C67262092C49200C36F75 /* MultilevelMenuUITests.swift */,
 				499C67282092C49200C36F75 /* Info.plist */,
 			);
-			path = MultilevelMenuDemoUITests;
+			path = MultilevelMenuUITests;
 			sourceTree = "<group>";
 		};
 		499C67362092FACE00C36F75 /* MultilevelMenu */ = {
@@ -200,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		499C67022092C48B00C36F75 /* MultilevelMenuDemo */ = {
+		499C67022092C48B00C36F75 /* MultilevelMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 499C672B2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuDemo" */;
+			buildConfigurationList = 499C672B2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenu" */;
 			buildPhases = (
 				499C66FF2092C48B00C36F75 /* Sources */,
 				499C67002092C48B00C36F75 /* Frameworks */,
@@ -212,14 +215,14 @@
 			);
 			dependencies = (
 			);
-			name = MultilevelMenuDemo;
+			name = MultilevelMenu;
 			productName = MultilevelMenuDemo;
-			productReference = 499C67032092C48B00C36F75 /* MultilevelMenuDemo.app */;
+			productReference = 499C67032092C48B00C36F75 /* MultilevelMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		499C67162092C49200C36F75 /* MultilevelMenuDemoTests */ = {
+		499C67162092C49200C36F75 /* MultilevelMenuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 499C672E2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuDemoTests" */;
+			buildConfigurationList = 499C672E2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuTests" */;
 			buildPhases = (
 				499C67132092C49200C36F75 /* Sources */,
 				499C67142092C49200C36F75 /* Frameworks */,
@@ -230,14 +233,14 @@
 			dependencies = (
 				499C67192092C49200C36F75 /* PBXTargetDependency */,
 			);
-			name = MultilevelMenuDemoTests;
+			name = MultilevelMenuTests;
 			productName = MultilevelMenuDemoTests;
-			productReference = 499C67172092C49200C36F75 /* MultilevelMenuDemoTests.xctest */;
+			productReference = 499C67172092C49200C36F75 /* MultilevelMenuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		499C67212092C49200C36F75 /* MultilevelMenuDemoUITests */ = {
+		499C67212092C49200C36F75 /* MultilevelMenuUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 499C67312092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuDemoUITests" */;
+			buildConfigurationList = 499C67312092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuUITests" */;
 			buildPhases = (
 				499C671E2092C49200C36F75 /* Sources */,
 				499C671F2092C49200C36F75 /* Frameworks */,
@@ -248,9 +251,9 @@
 			dependencies = (
 				499C67242092C49200C36F75 /* PBXTargetDependency */,
 			);
-			name = MultilevelMenuDemoUITests;
+			name = MultilevelMenuUITests;
 			productName = MultilevelMenuDemoUITests;
-			productReference = 499C67222092C49200C36F75 /* MultilevelMenuDemoUITests.xctest */;
+			productReference = 499C67222092C49200C36F75 /* MultilevelMenuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -276,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 499C66FE2092C48B00C36F75 /* Build configuration list for PBXProject "MultilevelMenuDemo" */;
+			buildConfigurationList = 499C66FE2092C48B00C36F75 /* Build configuration list for PBXProject "MultilevelMenu" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -289,9 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				499C67022092C48B00C36F75 /* MultilevelMenuDemo */,
-				499C67162092C49200C36F75 /* MultilevelMenuDemoTests */,
-				499C67212092C49200C36F75 /* MultilevelMenuDemoUITests */,
+				499C67022092C48B00C36F75 /* MultilevelMenu */,
+				499C67162092C49200C36F75 /* MultilevelMenuTests */,
+				499C67212092C49200C36F75 /* MultilevelMenuUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +311,7 @@
 				499C670C2092C48C00C36F75 /* Main.storyboard in Resources */,
 				499C67402092FE7B00C36F75 /* businessType.json in Resources */,
 				46D6988020A9DE9F00674A5F /* btn_common_close_wh@2x.png in Resources */,
+				464FB82F20B1B5380074605C /* China.png in Resources */,
 				46D6987F20A9DE9F00674A5F /* btn_common_close_wh@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499C671C2092C49200C36F75 /* MultilevelMenuDemoTests.swift in Sources */,
+				499C671C2092C49200C36F75 /* MultilevelMenuTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499C67272092C49200C36F75 /* MultilevelMenuDemoUITests.swift in Sources */,
+				499C67272092C49200C36F75 /* MultilevelMenuUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,12 +374,12 @@
 /* Begin PBXTargetDependency section */
 		499C67192092C49200C36F75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 499C67022092C48B00C36F75 /* MultilevelMenuDemo */;
+			target = 499C67022092C48B00C36F75 /* MultilevelMenu */;
 			targetProxy = 499C67182092C49200C36F75 /* PBXContainerItemProxy */;
 		};
 		499C67242092C49200C36F75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 499C67022092C48B00C36F75 /* MultilevelMenuDemo */;
+			target = 499C67022092C48B00C36F75 /* MultilevelMenu */;
 			targetProxy = 499C67232092C49200C36F75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -520,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJUJXP82S4;
-				INFOPLIST_FILE = MultilevelMenuDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJUJXP82S4;
-				INFOPLIST_FILE = MultilevelMenuDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,7 +572,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultilevelMenuDemo.app/MultilevelMenuDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultilevelMenu.app/MultilevelMenu";
 			};
 			name = Debug;
 		};
@@ -588,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultilevelMenuDemo.app/MultilevelMenuDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultilevelMenu.app/MultilevelMenu";
 			};
 			name = Release;
 		};
@@ -633,7 +637,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		499C66FE2092C48B00C36F75 /* Build configuration list for PBXProject "MultilevelMenuDemo" */ = {
+		499C66FE2092C48B00C36F75 /* Build configuration list for PBXProject "MultilevelMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				499C67292092C49200C36F75 /* Debug */,
@@ -642,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		499C672B2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuDemo" */ = {
+		499C672B2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				499C672C2092C49200C36F75 /* Debug */,
@@ -651,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		499C672E2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuDemoTests" */ = {
+		499C672E2092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				499C672F2092C49200C36F75 /* Debug */,
@@ -660,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		499C67312092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuDemoUITests" */ = {
+		499C67312092C49200C36F75 /* Build configuration list for PBXNativeTarget "MultilevelMenuUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				499C67322092C49200C36F75 /* Debug */,

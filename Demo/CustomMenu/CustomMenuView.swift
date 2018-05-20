@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomMenuView: MultilevelMenuStyle1View {
+class CustomMenuView: MultilevelMenuStyle2View {
     
     // MARK: - UITableViewDelegate
     open override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -8,7 +8,7 @@
 
 import XCTest
 
-class MultilevelMenuDemoUITests: XCTestCase {
+class MultilevelMenuUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
