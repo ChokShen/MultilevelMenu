@@ -8,17 +8,17 @@
 
 import Foundation
 
-public struct MenuDataModel {
+open class MenuDataModel {
     ///Id of a piece of data in menu，required
-    public var id: String?
+    open var id: String?
     ///Data name，required
-    public var name: String?
+    open var name: String?
     ///Data value，optional
-    public var value: String?
+    open var value: String?
     ///Id of last-level menu，required
-    public var pid: String?
+    open var pid: String?
     ///Menu current level，optional
-    public var level: Int?
+    open var level: Int?
     
     init() {}
     

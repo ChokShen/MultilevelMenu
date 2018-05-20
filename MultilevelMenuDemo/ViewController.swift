@@ -9,11 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var customView: MultilevelMenuStyle1View!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        self.customView = CustomMenuView()
+//        let className = getClassName(self.customView)
+//        print(className)
+//        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    func getClassName(_ view: MultilevelMenuStyle1View) -> String {
+        return String(describing: type(of: view))
+    }
+    
     @IBOutlet weak var resultLabel: UILabel!
     @IBAction func testAction(_ sender: Any) {
         var dataSouce: [MenuDataModel] = []
@@ -31,9 +41,15 @@ class ViewController: UIViewController {
         }catch{
             print("读取本地数据出现错误！",error)
         }
-        self.navigationController?.pushViewController(MultilevelMenuController(title: "请选择行业类型", dataSouce: dataSouce) { (resultString, model) in
+        var option = MultilevelMenuOption()
+        option.rightBarButtonTitle = "ok"
+        option.rightBarButtonColor = UIColor.red
+        option.bottomButtonTitle = "ok"
+        option.bottomButtonBackgroundColor_Normal = UIColor.orange
+        let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, option: option, customView: CustomMenuView(), completion: { (resultString, model) in
             self.resultLabel.text = resultString
-        }, animated: true)
+        })
+        menu.show()
     }
 
     override func didReceiveMemoryWarning() {
