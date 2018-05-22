@@ -20,9 +20,9 @@ open class MenuDataModel {
     ///Menu current level，optional
     open var level: Int?
     
-    init() {}
+    public init() {}
     
-    init(dict: [AnyHashable: Any]) {
+    public init(dict: [AnyHashable: Any]) {
         self.id = dict["id"] as? String
         self.name = dict["name"] as? String
         self.value = dict["value"] as? String

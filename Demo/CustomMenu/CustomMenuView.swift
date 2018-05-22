@@ -16,7 +16,8 @@ class CustomMenuView: MultilevelMenuStyle2View {
         if cell == nil {
             cell = Bundle.main.loadNibNamed("CustomCell", owner: nil, options: nil)?.first as? CustomCell
         }
-        cell?.contenLabel?.text = dataSouce[indexPath.row].name
+        cell?.contenLabel?.text = dataSouce[indexPath.row].name //Text
+        //cell?.iconImageView.image = UIImage(named: dataSouce[indexPath.row].value!) //Image
         cell?.tintColor = option.checkMarkColor
         if indexPath == lastSelectedIndexPath {
             cell?.accessoryType = .checkmark
@@ -25,13 +26,4 @@ class CustomMenuView: MultilevelMenuStyle2View {
         }
         return cell!
     }
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
 }

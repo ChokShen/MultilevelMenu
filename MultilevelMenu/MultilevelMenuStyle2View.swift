@@ -42,7 +42,7 @@ open class MultilevelMenuStyle2View: MultilevelMenuView{
         }
     }
     
-    func hideAnimation_ClickBackgroundView() {
+    @objc func hideAnimation_ClickBackgroundView() {
         UIView.animate(withDuration: 0.5, animations: {
             self.animationView.frame.origin.x = CSScreenW
         }) { (finished) in

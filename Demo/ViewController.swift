@@ -38,11 +38,7 @@ class ViewController: UIViewController {
         }catch{
             print("读取本地数据出现错误！",error)
         }
-        var option = MultilevelMenuOption()
-        option.rightBarButtonTitle = "ok"
-        option.rightBarButtonColor = UIColor.red
-        option.bottomButtonTitle = "ok"
-        let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, option: option, completion: { (resultString, model) in
+        let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, completion: { (resultString, model) in
             self.resultLabel.text = resultString
         })
         menu.show()
@@ -51,7 +47,10 @@ class ViewController: UIViewController {
     @IBAction func customMenu(_ sender: Any) {
         guard let path = Bundle.main.path(forResource:"businessType", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
-        let menu = MultilevelStyle2Menu(title: "行业类型", fileUrl: url, customView: CustomMenuView(), completion: { (resultString, model) in
+        var option = MultilevelMenuOption()
+        option.rightBarButtonTitle = "ok"
+        option.rightBarButtonColor = UIColor.red
+        let menu = MultilevelStyle2Menu(title: "请选择行业类型", fileUrl: url, option: option, customView: CustomMenuView(), completion: { (resultString, model) in
             self.resultLabel.text = resultString
         })
         menu.show()

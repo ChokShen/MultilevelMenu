@@ -17,6 +17,7 @@ class CustomCell: UITableViewCell {
         }
     }
     
+    @IBOutlet weak var iconImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

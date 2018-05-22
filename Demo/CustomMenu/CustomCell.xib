@@ -55,6 +55,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="contenLabel" destination="MYG-4x-BAO" id="Amd-IR-fHR"/>
+                <outlet property="iconImageView" destination="Sbb-eG-P3e" id="PTa-fW-Bti"/>
                 <outlet property="seperator" destination="QvK-IC-bY0" id="qyY-oP-K0J"/>
             </connections>
             <point key="canvasLocation" x="-44" y="61"/>
