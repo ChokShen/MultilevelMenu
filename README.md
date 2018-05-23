@@ -13,7 +13,7 @@ Download the project, then drag the files of MultilevelMenu folder to your proje
 
 ## Basic usage
 ### 1.Data structure
-```
+```swift
 open class MenuDataModel {
 ///Id of a piece of data in menu，required
 open var id: String?
@@ -41,7 +41,7 @@ self.level = dict["level"] as? Int
 ### 2.Init
 
 Data handle
-```
+```swift
 let array: [Dictionary<String, String>] = [
 ["id":"01","name":"实物产品行业","value":""],
 ["id":"02","name":"服务行业","value":""],
@@ -58,7 +58,7 @@ dataSouce.append(dataModel)
 }
 ```
 Show
-```
+```swift
 let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, completion: { (resultString, model) in //'resultString' is combined with every level data that you have selected.'model' is the MenuDataModel that you have selected lastly.
 self.resultLabel.text = resultString
 })
@@ -68,7 +68,7 @@ menu.show()
 * Custom Cell
 Creat your custom cell by xib or code.
 * Create a MultilevelMenuStyle1View or MultilevelMenuStyle2View subclass
-```
+```swift
 class CustomMenuView: MultilevelMenuStyle2View {
 
 // MARK: - UITableViewDelegate
@@ -92,7 +92,7 @@ return cell!
 }
 ```
 *Show
-```
+```swift
 var option = MultilevelMenuOption()
 option.rightBarButtonTitle = "ok"
 option.rightBarButtonColor = UIColor.red
