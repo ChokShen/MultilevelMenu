@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "shenzhiqiang" => "295297647@qq.com" }
   s.ios.deployment_target = '10.0'
-  s.source       = { :git => "git@github.com:ChokShen/MultilevelMenu.git", :tag => "1.2.0" }
+  s.source       = { :git => "https://github.com/ChokShen/MultilevelMenu.git", :tag => "1.2.0" }
   s.source_files  = "MultilevelMenu/Source/**/*.swift"
   s.resources = "MultilevelMenu/Resources/*.png"
   s.framework  = 'Foundation', 'UIKit'
