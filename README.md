@@ -3,7 +3,7 @@ A custom multi-level menu/ address picker.
 ***
 ![gif1](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu.gif)  
 ***MultilevelStyle1Menu***    
-
+  
 ![gif2](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu.gif)  
 ***MultilevelStyle2Menu***
 
@@ -79,12 +79,12 @@ menu.allowSelectAnyLevelData = true
 ```
 ![gif3](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu_True.gif)  
 ***MultilevelStyle1Menu***  
-
+  
 ![gif4](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_True.gif)  
 ***MultilevelStyle2Menu***
 
 ## Custom Menu
-* Custom Cell
+* Custom Cell  
 Creat your custom cell by xib or code.
 * Create a MultilevelMenuStyle1View or MultilevelMenuStyle2View subclass
 ```swift
