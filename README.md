@@ -1,10 +1,10 @@
 # MultilevelMenu
 A custom multi-level menu/ address picker.
 ***
-![Alt gif1](https://github.com/ChokShen/MultilevelMenu/blob/master/Screenshots/MultilevelStyle1Menu.gif)
+![Alt gif1](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu.gif)
 MultilevelStyle1Menu
 
-![Alt gif2](https://github.com/ChokShen/MultilevelMenu/blob/master/Screenshots/MultilevelStyle2Menu.gif)
+![Alt gif2](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu.gif)
 MultilevelStyle2Menu
 
 ## Requirements 
@@ -76,10 +76,10 @@ Important Property
 ```swfit
 menu.allowSelectAnyLevelData = true
 ```
-![Alt gif3](https://github.com/ChokShen/MultilevelMenu/blob/master/Screenshots/MultilevelStyle1Menu_True.gif)
+![Alt gif3](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu_True.gif)
 MultilevelStyle1Menu
 
-![Alt gif4](https://github.com/ChokShen/MultilevelMenu/blob/master/Screenshots/MultilevelStyle2Menu_True.gif)
+![Alt gif4](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_True.gif)
 MultilevelStyle2Menu
 
 ## Custom Menu
@@ -108,7 +108,7 @@ class CustomMenuView: MultilevelMenuStyle2View {
     }
 }
 ```
-![Alt gif5](https://github.com/ChokShen/MultilevelMenu/blob/master/Screenshots/MultilevelStyle2Menu_Custom.gif)
+![Alt gif5](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_Custom.gif)
 
 *Show
 ```swift
