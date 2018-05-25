@@ -1,11 +1,11 @@
 # MultilevelMenu
 A custom multi-level menu/ address picker.
 ***
-###MultilevelStyle1Menu
-![gif1](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu.gif)
+![gif1](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu.gif)  
+MultilevelStyle1Menu
 
-###MultilevelStyle2Menu
-![gif2](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu.gif)
+![gif2](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu.gif)  
+MultilevelStyle2Menu
 
 ## Requirements 
 * iOS 8+
@@ -76,11 +76,11 @@ Important Property
 ```swfit
 menu.allowSelectAnyLevelData = true
 ```
-###MultilevelStyle1Menu
-![gif3](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu_True.gif)
+![gif3](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu_True.gif)  
+MultilevelStyle1Menu
 
-###MultilevelStyle2Menu
-![gif4](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_True.gif)
+![gif4](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_True.gif)  
+MultilevelStyle2Menu
 
 ## Custom Menu
 * Custom Cell
