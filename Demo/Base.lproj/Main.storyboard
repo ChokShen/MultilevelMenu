@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3Z-tA-cTq">
-                                <rect key="frame" x="140" y="285" width="92" height="30"/>
+                                <rect key="frame" x="142" y="285" width="92" height="30"/>
                                 <state key="normal" title="CustomMenu"/>
                                 <connections>
                                     <action selector="customMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9pr-ro-W5b"/>
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpS-dr-Zqk">
-                                <rect key="frame" x="166" y="247" width="39" height="30"/>
+                                <rect key="frame" x="168" y="247" width="39" height="30"/>
                                 <state key="normal" title="Menu"/>
                                 <connections>
                                     <action selector="testAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pta-hf-TBE"/>
@@ -44,11 +44,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JpS-dr-Zqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="56v-Od-nVE"/>
                             <constraint firstItem="rRb-sQ-VOS" firstAttribute="top" secondItem="X3Z-tA-cTq" secondAttribute="bottom" constant="8" symbolic="YES" id="9t6-GX-9Oh"/>
                             <constraint firstItem="X3Z-tA-cTq" firstAttribute="centerX" secondItem="JpS-dr-Zqk" secondAttribute="centerX" id="Lnk-xD-3J7"/>
                             <constraint firstItem="JpS-dr-Zqk" firstAttribute="top" secondItem="ye3-4n-dGx" secondAttribute="bottom" constant="183" id="YhK-JS-Pbb"/>
                             <constraint firstItem="X3Z-tA-cTq" firstAttribute="top" secondItem="JpS-dr-Zqk" secondAttribute="bottom" constant="8" symbolic="YES" id="agH-L6-ULD"/>
-                            <constraint firstItem="JpS-dr-Zqk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="166" id="bBv-bR-1aK"/>
                             <constraint firstItem="rRb-sQ-VOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itu-6M-GCB"/>
                         </constraints>
                     </view>

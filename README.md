@@ -1,5 +1,6 @@
 # MultilevelMenu
 A custom multi-level menu/ address picker.
+***
 
 ## Requirements 
 * iOS 8+
@@ -66,6 +67,11 @@ let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, com
 })
 menu.show()
 ```
+Important Property
+```swfit
+menu.allowSelectAnyLevelData = true
+```
+
 ## Custom Menu
 * Custom Cell
 Creat your custom cell by xib or code.

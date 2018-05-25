@@ -78,7 +78,7 @@ extension UIColor {
     }
     class var material_cyan_accent_disabled : UIColor
     {
-        return self.ColorFromRGB(rgbValue: 0x18FFFF )
+        return self.ColorFromRGB(rgbValue: 0x84FFFF )
     }
     
     class var material_cyan_accent_normal : UIColor

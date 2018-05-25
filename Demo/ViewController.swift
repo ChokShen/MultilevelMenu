@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, completion: { (resultString, model) in
             self.resultLabel.text = resultString
         })
+        //menu.allowSelectAnyLevelData = true
         menu.show()
     }
 

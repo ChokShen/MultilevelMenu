@@ -193,7 +193,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         confirmButton.setTitle(self.defalutOption.bottomButtonTitle, for: .normal)
         confirmButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         confirmButton.setTitleColor(UIColor.white, for: .normal)
-        confirmButton.setBackgroundImage(UIImage.imageWithColor(self.defalutOption.bottomButtonBackgroundColor_Normal), for: .normal)
+        confirmButton.setBackgroundImage(UIImage.imageWithColor(self.defalutOption.bottomButtonBackgroundColor_Disable), for: .normal)
         confirmButton.setBackgroundImage(UIImage.imageWithColor(self.defalutOption.bottomButtonBackgroundColor_Highlighted), for: .highlighted)
         confirmButton.addTarget(self, action: #selector(confirm), for: .touchUpInside)
         self.addSubview(confirmButton)
@@ -203,9 +203,9 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
     private func setConfirmBtn(_ enabled: Bool) {
         self.confirmButton.isEnabled = enabled
         if enabled {
-            self.confirmButton.backgroundColor = defalutOption.bottomButtonBackgroundColor_Normal
+            self.confirmButton.setBackgroundImage(UIImage.imageWithColor(self.defalutOption.bottomButtonBackgroundColor_Normal), for: .normal)
         } else {
-            self.confirmButton.backgroundColor = defalutOption.bottomButtonBackgroundColor_Disable
+            self.confirmButton.setBackgroundImage(UIImage.imageWithColor(self.defalutOption.bottomButtonBackgroundColor_Disable), for: .normal)
         }
     }
     
