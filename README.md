@@ -2,8 +2,8 @@
 A custom multi-level menu/ address picker.
 ***
 ![gif1](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu.gif)  
-***MultilevelStyle1Menu***    
-  
+***MultilevelStyle1Menu*** 
+ 
 ![gif2](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu.gif)  
 ***MultilevelStyle2Menu***
 
@@ -78,8 +78,8 @@ menu.allowSelectAnyLevelData = true
 // It's false by defalut that it means you must select the last level data, otherwise you can't confirm result.But If it's true, meaning that you can select any level data to confirm result.
 ```
 ![gif3](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle1Menu_True.gif)  
-***MultilevelStyle1Menu***  
-  
+***MultilevelStyle1Menu***
+ 
 ![gif4](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_True.gif)  
 ***MultilevelStyle2Menu***
 
