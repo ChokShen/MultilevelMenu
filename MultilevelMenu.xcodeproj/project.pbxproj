@@ -11,14 +11,12 @@
 		4608868F20A9B5A300D1ADFD /* MultilevelStyle1Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608868D20A9B5A300D1ADFD /* MultilevelStyle1Menu.swift */; };
 		4608869120A9BF4D00D1ADFD /* MultilevelMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4608869020A9BF4D00D1ADFD /* MultilevelMenuView.swift */; };
 		462D8B5420A47E9500AD5D41 /* MenuMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D8B5320A47E9500AD5D41 /* MenuMarco.swift */; };
+		4632684420BAE35C003FEBC8 /* MultilevelMenuBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4632684320BAE35C003FEBC8 /* MultilevelMenuBundle.bundle */; };
 		464FB82F20B1B5380074605C /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 464FB82E20B1B5380074605C /* China.png */; };
 		469F5A5C20A084E000741DF3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F5A5A20A084E000741DF3 /* CustomCell.swift */; };
 		469F5A5D20A084E000741DF3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 469F5A5B20A084E000741DF3 /* CustomCell.xib */; };
 		469F5A5F20A0856800741DF3 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469F5A5E20A0856800741DF3 /* CustomMenuView.swift */; };
 		46D6987820A9CD8800674A5F /* MultilevelStlyeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D6987720A9CD8800674A5F /* MultilevelStlyeMenu.swift */; };
-		46D6987E20A9DE9F00674A5F /* btn_common_close_wh.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D6987B20A9DE9F00674A5F /* btn_common_close_wh.png */; };
-		46D6987F20A9DE9F00674A5F /* btn_common_close_wh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D6987C20A9DE9F00674A5F /* btn_common_close_wh@3x.png */; };
-		46D6988020A9DE9F00674A5F /* btn_common_close_wh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D6987D20A9DE9F00674A5F /* btn_common_close_wh@2x.png */; };
 		499C67072092C48B00C36F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C67062092C48B00C36F75 /* AppDelegate.swift */; };
 		499C67092092C48B00C36F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C67082092C48B00C36F75 /* ViewController.swift */; };
 		499C670C2092C48C00C36F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499C670A2092C48C00C36F75 /* Main.storyboard */; };
@@ -55,14 +53,12 @@
 		4608868D20A9B5A300D1ADFD /* MultilevelStyle1Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStyle1Menu.swift; sourceTree = "<group>"; };
 		4608869020A9BF4D00D1ADFD /* MultilevelMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelMenuView.swift; sourceTree = "<group>"; };
 		462D8B5320A47E9500AD5D41 /* MenuMarco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMarco.swift; sourceTree = "<group>"; };
+		4632684320BAE35C003FEBC8 /* MultilevelMenuBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MultilevelMenuBundle.bundle; sourceTree = "<group>"; };
 		464FB82E20B1B5380074605C /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
 		469F5A5A20A084E000741DF3 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		469F5A5B20A084E000741DF3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		469F5A5E20A0856800741DF3 /* CustomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 		46D6987720A9CD8800674A5F /* MultilevelStlyeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilevelStlyeMenu.swift; sourceTree = "<group>"; };
-		46D6987B20A9DE9F00674A5F /* btn_common_close_wh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_common_close_wh.png; sourceTree = "<group>"; };
-		46D6987C20A9DE9F00674A5F /* btn_common_close_wh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_common_close_wh@3x.png"; sourceTree = "<group>"; };
-		46D6987D20A9DE9F00674A5F /* btn_common_close_wh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_common_close_wh@2x.png"; sourceTree = "<group>"; };
 		499C67032092C48B00C36F75 /* MultilevelMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilevelMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499C67062092C48B00C36F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		499C67082092C48B00C36F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,9 +134,7 @@
 		46D6987A20A9DE1800674A5F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				46D6987B20A9DE9F00674A5F /* btn_common_close_wh.png */,
-				46D6987D20A9DE9F00674A5F /* btn_common_close_wh@2x.png */,
-				46D6987C20A9DE9F00674A5F /* btn_common_close_wh@3x.png */,
+				4632684320BAE35C003FEBC8 /* MultilevelMenuBundle.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -315,12 +309,10 @@
 				469F5A5D20A084E000741DF3 /* CustomCell.xib in Resources */,
 				499C67112092C49200C36F75 /* LaunchScreen.storyboard in Resources */,
 				499C670E2092C49200C36F75 /* Assets.xcassets in Resources */,
-				46D6987E20A9DE9F00674A5F /* btn_common_close_wh.png in Resources */,
 				499C670C2092C48C00C36F75 /* Main.storyboard in Resources */,
 				499C67402092FE7B00C36F75 /* businessType.json in Resources */,
-				46D6988020A9DE9F00674A5F /* btn_common_close_wh@2x.png in Resources */,
+				4632684420BAE35C003FEBC8 /* MultilevelMenuBundle.bundle in Resources */,
 				464FB82F20B1B5380074605C /* China.png in Resources */,
-				46D6987F20A9DE9F00674A5F /* btn_common_close_wh@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

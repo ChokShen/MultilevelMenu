@@ -162,7 +162,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
         //2.取消按钮
         cancelButton = UIButton(type: .custom)
         cancelButton.frame = CGRect(x: leftEdge, y: (navigationBar.frame.height - 18) / 2, width: 18, height: 18)
-        cancelButton.setImage(UIImage(named: "btn_common_close_wh")?.imageMaskWithColor(self.defalutOption.closeButtonColor), for: .normal)
+        cancelButton.setImage(UIImage(named: "MultilevelMenuBundle.bundle/btn_common_close_wh")?.imageMaskWithColor(self.defalutOption.closeButtonColor), for: .normal)
         cancelButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         navigationBar.addSubview(cancelButton)
         //3.标题
