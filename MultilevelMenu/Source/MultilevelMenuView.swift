@@ -56,7 +56,7 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
     ///   - option: 配置参数
     ///   - isFirst: 是否第一级列表，默认为false
     ///   - isSupplementaryButton: 是否需要底部辅助按钮，默认为false
-    convenience  init(frame: CGRect, option: MultilevelMenuOption, isFirst: Bool = false) {
+    convenience init(frame: CGRect, option: MultilevelMenuOption, isFirst: Bool = false) {
         self.init(frame: frame)
         self.option = option
         if isFirst == false {

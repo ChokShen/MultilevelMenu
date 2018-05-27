@@ -41,7 +41,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     ///   - option: 菜单的参数配置
     ///   - customView: 自定义视图
     ///   - completion: 选择结果的回调
-    convenience init(title: String?,
+    public convenience init(title: String?,
                 fileUrl: URL,
                 option: MultilevelMenuOption? = nil,
                 customView: MultilevelMenuStyle2View? = nil,
@@ -68,7 +68,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     ///   - option: 菜单的参数配置
     ///   - customView: 自定义视图
     ///   - completion: 选择结果的回调
-    convenience init(title: String?,
+    public convenience init(title: String?,
                 dataSouce: [MenuDataModel],
                 option: MultilevelMenuOption? = nil,
                 customView: MultilevelMenuStyle2View? = nil,
