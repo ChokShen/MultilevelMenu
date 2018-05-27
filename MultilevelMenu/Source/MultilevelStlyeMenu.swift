@@ -33,13 +33,9 @@ public class MultilevelStlyeMenu: UIView {
     var buttonTotalWidth: CGFloat = 0
     
     //MARK: - init
-    override public init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         layOut()
-    }
-    
-    public init (_ className: String?) {
-        self.init()
     }
     
     required public init?(coder aDecoder: NSCoder) {

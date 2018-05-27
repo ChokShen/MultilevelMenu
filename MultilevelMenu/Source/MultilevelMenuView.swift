@@ -71,9 +71,13 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
         tableViewConfiguration()
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.init(white: 0.5, alpha: 0.5)
+    }
+    
+    public init (_ className: String?) {
+        self.init()
     }
     
      func setUpLayOut() {
