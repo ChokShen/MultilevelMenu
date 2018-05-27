@@ -12,20 +12,20 @@ public typealias SelectResultClosure = (String, MenuDataModel) -> Void
 
 public class MultilevelStlyeMenu: UIView {
     
-    var titleText: String?
-    var allDataSource: [MenuDataModel] = []
-    var firstMenuDataSource: [MenuDataModel] = []
-    var modelSelected = MenuDataModel()
-    var completion: SelectResultClosure?
-    var defalutOption: MultilevelMenuOption = MultilevelMenuOption()
     ///false表示你必须要选择最后一级的数据才可以点确认按钮；true表示你可以选择任意一级的数据，然后确认结果
-    var allowSelectAnyLevelData = false
+    public var allowSelectAnyLevelData = false
     ///当前列表是第几级
     var currentLevel: Int = 1
     ///当前级别的行是否有下一级别的数据
     var hasNextLevel = true
     ///是否选中了最后一级列表的行
     var isSelectLastLevelRow = false
+    var titleText: String?
+    var allDataSource: [MenuDataModel] = []
+    var firstMenuDataSource: [MenuDataModel] = []
+    var modelSelected = MenuDataModel()
+    var completion: SelectResultClosure?
+    var defalutOption: MultilevelMenuOption = MultilevelMenuOption()
     var upperBarView: UIView!
     var reminderLabel: UILabel!
     var scrollView: UIScrollView!
@@ -33,9 +33,13 @@ public class MultilevelStlyeMenu: UIView {
     var buttonTotalWidth: CGFloat = 0
     
     //MARK: - init
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         layOut()
+    }
+    
+    public init (_ className: String?) {
+        self.init()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -81,7 +85,7 @@ public class MultilevelStlyeMenu: UIView {
     }
     
     //MARK: - Show & Cancel
-    func show() {
+    public func show() {
         
     }
     

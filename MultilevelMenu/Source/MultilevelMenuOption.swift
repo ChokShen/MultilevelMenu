@@ -50,6 +50,8 @@ public struct  MultilevelMenuOption {
     public var upperBarDefalutLeftText = "请选择"
     ///选中菜单的一项后顶部视图左边显示的文字
     public var upperBarSelectedLeftText = "已选择"
+    
+    public init() {}
 }
 
 //MARK: - Extension
