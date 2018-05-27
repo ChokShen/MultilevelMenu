@@ -211,7 +211,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     }
     
     //MARK: - Show & Cancel
-    override func show() {
+    override public func show() {
         if allowSelectAnyLevelData {
             setConfirmBtn(true)
         } else {
