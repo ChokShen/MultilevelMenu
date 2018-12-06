@@ -112,7 +112,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
             setConfirmBtn(false)
         }
         // 通过window 弹出view
-        let window = UIApplication.shared.keyWindow
+        guard let window = UIApplication.shared.delegate?.window else { return }
         guard let currentWindow = window else { return }
         UIView.animate(withDuration: 0.3, animations: {
             self.frame.origin = CGPoint(x: 0, y: CSScreenH - MultilevelStyle1Menu.height)

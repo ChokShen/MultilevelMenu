@@ -15,7 +15,7 @@ public protocol MultilevelMenuStlye1ViewDelegate: class {
 open class MultilevelMenuStyle1View: MultilevelMenuView {
     
     weak var delegate: MultilevelMenuStlye1ViewDelegate?
-    
+
     //MARK: - Animation
     override func popFromRightAnimation(_ completion: AnimationCompletionClosure? = nil) {
         UIView.animate(withDuration: 0.5, animations: {
