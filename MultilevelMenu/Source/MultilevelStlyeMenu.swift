@@ -143,7 +143,7 @@ public class MultilevelStlyeMenu: UIView {
         } else {
             text = "  >  \(name ?? "")"
         }
-        let buttonW_Text = text?.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: buttonH), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16)], context: nil).width
+        let buttonW_Text = text?.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: buttonH), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16)], context: nil).width
         let buttonW = buttonW_Text ?? 48
         let button = UIButton(frame: CGRect(x: buttonTotalWidth, y: 0, width: buttonW , height: buttonH))
         self.buttonTotalWidth += buttonW
@@ -154,7 +154,7 @@ public class MultilevelStlyeMenu: UIView {
             button.setTitle(name, for: .normal)
         } else {
             let attributedStr = NSMutableAttributedString.init(string: text ?? " ")
-            attributedStr.addAttributes([NSAttributedStringKey.foregroundColor: UIColor.darkGray], range: NSRange(location: 2, length: 1))
+            attributedStr.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], range: NSRange(location: 2, length: 1))
             button.titleLabel?.textColor = defalutOption.upperBarButtonColor
             button.titleLabel?.attributedText = attributedStr
             button.setAttributedTitle(attributedStr, for: .normal)
@@ -177,7 +177,7 @@ public class MultilevelStlyeMenu: UIView {
         } else {
             text = "  >  \(name ?? "")"
         }
-        let buttonW_Text = text?.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: buttonH), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16)], context: nil).width
+        let buttonW_Text = text?.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: buttonH), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16)], context: nil).width
         let buttonW = buttonW_Text ?? 48
         let currentButtonW = currentButton?.bounds.size.width
         currentButton?.frame.size = CGSize(width: buttonW, height: buttonH)
@@ -185,7 +185,7 @@ public class MultilevelStlyeMenu: UIView {
             currentButton?.setTitle(name, for: .normal)
         } else {
             let attributedStr = NSMutableAttributedString.init(string: text ?? " ")
-            attributedStr.addAttributes([NSAttributedStringKey.foregroundColor: UIColor.darkGray], range: NSRange(location: 2, length: 1))
+            attributedStr.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], range: NSRange(location: 2, length: 1))
             currentButton?.titleLabel?.textColor = defalutOption.upperBarButtonColor
             currentButton?.titleLabel?.attributedText = attributedStr
             currentButton?.setAttributedTitle(attributedStr, for: .normal)
