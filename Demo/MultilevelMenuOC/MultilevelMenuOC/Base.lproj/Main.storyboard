@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oL2-4m-NWH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ye3-4n-dGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="2nC-GQ-CeA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3Z-tA-cTq">
+                                <rect key="frame" x="141.5" y="285" width="92" height="30"/>
+                                <state key="normal" title="CustomMenu"/>
+                                <connections>
+                                    <action selector="customMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjb-Xk-2by"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRb-sQ-VOS">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpS-dr-Zqk">
+                                <rect key="frame" x="168" y="247" width="39" height="30"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <action selector="testAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gPm-Rl-W9d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JpS-dr-Zqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="56v-Od-nVE"/>
+                            <constraint firstItem="rRb-sQ-VOS" firstAttribute="top" secondItem="X3Z-tA-cTq" secondAttribute="bottom" constant="8" symbolic="YES" id="9t6-GX-9Oh"/>
+                            <constraint firstItem="X3Z-tA-cTq" firstAttribute="centerX" secondItem="JpS-dr-Zqk" secondAttribute="centerX" id="Lnk-xD-3J7"/>
+                            <constraint firstItem="JpS-dr-Zqk" firstAttribute="top" secondItem="ye3-4n-dGx" secondAttribute="bottom" constant="183" id="YhK-JS-Pbb"/>
+                            <constraint firstItem="X3Z-tA-cTq" firstAttribute="top" secondItem="JpS-dr-Zqk" secondAttribute="bottom" constant="8" symbolic="YES" id="agH-L6-ULD"/>
+                            <constraint firstItem="rRb-sQ-VOS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itu-6M-GCB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oec-B0-R4D"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="rRb-sQ-VOS" id="qDS-hm-m1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="30"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="71V-8u-cWg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oL2-4m-NWH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V7A-TU-AY0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="znt-jX-PRf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bON-oY-WZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>

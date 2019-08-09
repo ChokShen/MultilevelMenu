@@ -8,21 +8,21 @@
 
 import Foundation
 
-open class MenuDataModel {
+open class MenuDataModel: NSObject {
     ///Id of a piece of data in menu，required
-    open var id: String?
+    @objc open var id: String?
     ///Data name，required
-    open var name: String?
+    @objc open var name: String?
     ///Data value，optional
-    open var value: String?
+    @objc open var value: String?
     ///Id of last-level menu，required
-    open var pid: String?
+    @objc open var pid: String?
     ///Menu current level，optional
     open var level: Int?
     
-    public init() {}
+    public override init() {}
     
-    public init(dict: [AnyHashable: Any]) {
+    @objc public init(dict: [AnyHashable: Any]) {
         self.id = dict["id"] as? String
         self.name = dict["name"] as? String
         self.value = dict["value"] as? String

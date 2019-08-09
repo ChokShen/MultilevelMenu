@@ -40,11 +40,11 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
     }()
     
     //MARK: - init
-    public convenience init(title: String?,
-                     fileUrl: URL,
-                     option: MultilevelMenuOption? = nil,
-                     customView: MultilevelMenuStyle1View? = nil,
-                     completion: SelectResultClosure?) {
+    @objc public convenience init(title: String?,
+                                  fileUrl: URL,
+                                  option: MultilevelMenuOption? = nil,
+                                  customView: MultilevelMenuStyle1View? = nil,
+                                  completion: SelectResultClosure?) {
         self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: MultilevelStyle1Menu.height))
         self.allDataSource = getDataSourceFromJsonFile(fileUrl)
         self.titleText = title
@@ -59,11 +59,11 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         setFirstDataSource()
     }
     
-    public convenience init(title: String?,
-                     dataSouce: [MenuDataModel],
-                     option: MultilevelMenuOption? = nil,
-                     customView: MultilevelMenuStyle1View? = nil,
-                     completion: SelectResultClosure?) {
+    @objc public convenience init(title: String?,
+                                  dataSouce: [MenuDataModel],
+                                  option: MultilevelMenuOption? = nil,
+                                  customView: MultilevelMenuStyle1View? = nil,
+                                  completion: SelectResultClosure?) {
         self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: MultilevelStyle1Menu.height))
         self.allDataSource = dataSouce
         self.titleText = title
@@ -105,7 +105,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
     }
     
     //MARK: - Show & Cancel
-    override  public func show() {
+    @objc override  public func show() {
         if allowSelectAnyLevelData {
             setConfirmBtn(true)
         } else {
@@ -142,7 +142,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         layOutMenuView()
         layOutConfirmButton()
     }
-        
+    
     override func layOutMenuView() {
         firstMenuView = initMultilevelMenuView()
         firstMenuView.frame = tableViewFrame

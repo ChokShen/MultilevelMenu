@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     @IBAction func customMenu(_ sender: Any) {
         guard let path = Bundle.main.path(forResource:"businessType", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
-        var option = MultilevelMenuOption()
+        let option = MultilevelMenuOption()
         option.rightBarButtonTitle = "ok"
         option.rightBarButtonColor = UIColor.red
         let menu = MultilevelStyle2Menu(title: "请选择行业类型", fileUrl: url, option: option, customView: CustomMenuView(), completion: { (resultString, model) in

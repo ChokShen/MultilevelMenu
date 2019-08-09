@@ -9,49 +9,49 @@
 import Foundation
 import UIKit
 
-public struct  MultilevelMenuOption {
+public class MultilevelMenuOption: NSObject {
     
     //MARK: - Common Option
     ///文本的字体
-    public var textFont: UIFont = UIFont.systemFont(ofSize: 17)
+    @objc public var textFont: UIFont = UIFont.systemFont(ofSize: 17)
     ///文本的颜色
-    public var textColor: UIColor = UIColor.black
+    @objc public var textColor: UIColor = UIColor.black
     ///勾选的颜色
-    public var checkMarkColor: UIColor = UIColor.material_cyan_accent_normal
+    @objc public var checkMarkColor: UIColor = UIColor.material_cyan_accent_normal
     ///顶部视图左边文字颜色
-    public var upperBarLeftTextColor: UIColor = UIColor.ColorFromRGB(rgbValue: 0x999999)
+    @objc public var upperBarLeftTextColor: UIColor = UIColor.ColorFromRGB(rgbValue: 0x999999)
     ///顶部视图左边文字字体
-    public var upperBarLeftTextFont: UIFont = UIFont.boldSystemFont(ofSize: 16)
+    @objc public var upperBarLeftTextFont: UIFont = UIFont.boldSystemFont(ofSize: 16)
     ///顶部视图展示按钮的颜色
-    public var upperBarButtonColor: UIColor = UIColor.material_cyan_accent_normal
+    @objc public var upperBarButtonColor: UIColor = UIColor.material_cyan_accent_normal
     ///顶部视图展示按钮的字体
-    public var upperBarButtonFont: UIFont = UIFont.boldSystemFont(ofSize: 17)
+    @objc public var upperBarButtonFont: UIFont = UIFont.boldSystemFont(ofSize: 17)
     
     //MARK: - Style1Menu Option
-    public var bottomButtonTitle = "确定"
-    public var bottomButtonBackgroundColor_Normal: UIColor = UIColor.material_cyan_accent_normal
-    public var bottomButtonBackgroundColor_Disable: UIColor = UIColor.material_cyan_accent_disabled
-    public var bottomButtonBackgroundColor_Highlighted: UIColor = UIColor.material_cyan_accent_highlighted
+    @objc public var bottomButtonTitle = "确定"
+    @objc public var bottomButtonBackgroundColor_Normal: UIColor = UIColor.material_cyan_accent_normal
+    @objc public var bottomButtonBackgroundColor_Disable: UIColor = UIColor.material_cyan_accent_disabled
+    @objc public var bottomButtonBackgroundColor_Highlighted: UIColor = UIColor.material_cyan_accent_highlighted
     
     //MARK: - Style2Menu Option
     ///次级菜单(级数大于1的菜单)的宽度
-    public var secondaryMenuWidth: CGFloat = 80
+    @objc public var secondaryMenuWidth: CGFloat = 80
     ///自定义导航栏的背景色
-    public var navigationBarColor: UIColor = UIColor.navigationBarColor
+    @objc public var navigationBarColor: UIColor = UIColor.navigationBarColor
     ///导航标题的颜色
-    public var navigationTitleColor: UIColor = UIColor.black
+    @objc public var navigationTitleColor: UIColor = UIColor.black
     ///左侧关闭按钮的颜色
-    public var closeButtonColor: UIColor = UIColor.black
+    @objc public var closeButtonColor: UIColor = UIColor.black
     ///右侧导航按钮的标题
-    public var rightBarButtonTitle: String = "确定"
+    @objc public var rightBarButtonTitle: String = "确定"
     ///右侧导航按钮的颜色
-    public var rightBarButtonColor: UIColor = UIColor.black
+    @objc public var rightBarButtonColor: UIColor = UIColor.black
     ///顶部视图左边默认显示的文字
-    public var upperBarDefalutLeftText = "请选择"
+    @objc public var upperBarDefalutLeftText = "请选择"
     ///选中菜单的一项后顶部视图左边显示的文字
-    public var upperBarSelectedLeftText = "已选择"
+    @objc public var upperBarSelectedLeftText = "已选择"
     
-    public init() {}
+    public override init() {}
 }
 
 //MARK: - Extension

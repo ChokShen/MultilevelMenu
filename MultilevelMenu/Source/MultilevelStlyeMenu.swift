@@ -13,7 +13,7 @@ public typealias SelectResultClosure = (String, MenuDataModel) -> Void
 public class MultilevelStlyeMenu: UIView {
     
     ///false表示你必须要选择最后一级的数据才可以点确认按钮；true表示你可以选择任意一级的数据，然后确认结果
-    public var allowSelectAnyLevelData = false
+    @objc public var allowSelectAnyLevelData = false
     ///当前列表是第几级
     var currentLevel: Int = 1
     ///当前级别的行是否有下一级别的数据
@@ -81,7 +81,7 @@ public class MultilevelStlyeMenu: UIView {
     }
     
     //MARK: - Show & Cancel
-    public func show() {
+    @objc public func show() {
         
     }
     

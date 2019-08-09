@@ -9,7 +9,7 @@
 import UIKit
 
 public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2ViewDelegate{
-
+    
     override var hasNextLevel: Bool {
         didSet {
             if allowSelectAnyLevelData == false {
@@ -41,11 +41,11 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     ///   - option: 菜单的参数配置
     ///   - customView: 自定义视图
     ///   - completion: 选择结果的回调
-    public convenience init(title: String?,
-                fileUrl: URL,
-                option: MultilevelMenuOption? = nil,
-                customView: MultilevelMenuStyle2View? = nil,
-                completion: SelectResultClosure?) {
+    @objc public convenience init(title: String?,
+                                  fileUrl: URL,
+                                  option: MultilevelMenuOption? = nil,
+                                  customView: MultilevelMenuStyle2View? = nil,
+                                  completion: SelectResultClosure?) {
         self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: CSScreenH))
         self.allDataSource = getDataSourceFromJsonFile(fileUrl)
         self.titleText = title
@@ -68,11 +68,11 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     ///   - option: 菜单的参数配置
     ///   - customView: 自定义视图
     ///   - completion: 选择结果的回调
-    public convenience init(title: String?,
-                dataSouce: [MenuDataModel],
-                option: MultilevelMenuOption? = nil,
-                customView: MultilevelMenuStyle2View? = nil,
-                completion: SelectResultClosure?) {
+    @objc public convenience init(title: String?,
+                                  dataSouce: [MenuDataModel],
+                                  option: MultilevelMenuOption? = nil,
+                                  customView: MultilevelMenuStyle2View? = nil,
+                                  completion: SelectResultClosure?) {
         self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: CSScreenH))
         self.allDataSource = dataSouce
         self.titleText = title
@@ -213,7 +213,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     }
     
     //MARK: - Show & Cancel
-    override public func show() {
+    @objc override public func show() {
         if allowSelectAnyLevelData {
             setConfirmBtn(true)
         } else {

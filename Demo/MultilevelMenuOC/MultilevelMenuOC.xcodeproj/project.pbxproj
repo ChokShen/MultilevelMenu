@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4993E7DC22FD53BD001EEB63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993E7DB22FD53BD001EEB63 /* AppDelegate.m */; };
+		4993E7DF22FD53BD001EEB63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993E7DE22FD53BD001EEB63 /* ViewController.m */; };
+		4993E7E222FD53BD001EEB63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4993E7E022FD53BD001EEB63 /* Main.storyboard */; };
+		4993E7E422FD53BF001EEB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4993E7E322FD53BF001EEB63 /* Assets.xcassets */; };
+		4993E7E722FD53BF001EEB63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4993E7E522FD53BF001EEB63 /* LaunchScreen.storyboard */; };
+		4993E7EA22FD53BF001EEB63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993E7E922FD53BF001EEB63 /* main.m */; };
+		4993E7F422FD53BF001EEB63 /* MultilevelMenuOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993E7F322FD53BF001EEB63 /* MultilevelMenuOCTests.m */; };
+		4993E7FF22FD53BF001EEB63 /* MultilevelMenuOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993E7FE22FD53BF001EEB63 /* MultilevelMenuOCUITests.m */; };
+		4993E85822FD5BC8001EEB63 /* MultilevelMenuBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4993E84D22FD5BC8001EEB63 /* MultilevelMenuBundle.bundle */; };
+		4993E85922FD5BC8001EEB63 /* MenuDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E84F22FD5BC8001EEB63 /* MenuDataModel.swift */; };
+		4993E85A22FD5BC8001EEB63 /* MultilevelMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85022FD5BC8001EEB63 /* MultilevelMenuOption.swift */; };
+		4993E85B22FD5BC8001EEB63 /* MultilevelStyle2Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85122FD5BC8001EEB63 /* MultilevelStyle2Menu.swift */; };
+		4993E85C22FD5BC8001EEB63 /* MenuMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85222FD5BC8001EEB63 /* MenuMarco.swift */; };
+		4993E85D22FD5BC8001EEB63 /* MultilevelMenuStyle1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85322FD5BC8001EEB63 /* MultilevelMenuStyle1View.swift */; };
+		4993E85E22FD5BC8001EEB63 /* MultilevelMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85422FD5BC8001EEB63 /* MultilevelMenuView.swift */; };
+		4993E85F22FD5BC8001EEB63 /* MultilevelMenuStyle2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85522FD5BC8001EEB63 /* MultilevelMenuStyle2View.swift */; };
+		4993E86022FD5BC8001EEB63 /* MultilevelStlyeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85622FD5BC8001EEB63 /* MultilevelStlyeMenu.swift */; };
+		4993E86122FD5BC8001EEB63 /* MultilevelStyle1Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85722FD5BC8001EEB63 /* MultilevelStyle1Menu.swift */; };
+		4993E86722FD7065001EEB63 /* businessType.json in Resources */ = {isa = PBXBuildFile; fileRef = 4993E86622FD7065001EEB63 /* businessType.json */; };
+		4993E88022FD8284001EEB63 /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 4993E87822FD8284001EEB63 /* China.png */; };
+		4993E88122FD8284001EEB63 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4993E87922FD8284001EEB63 /* CustomCell.xib */; };
+		4993E88222FD8284001EEB63 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E87A22FD8284001EEB63 /* CustomCell.swift */; };
+		4993E88422FD8284001EEB63 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E87D22FD8284001EEB63 /* CustomMenuView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4993E7F022FD53BF001EEB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4993E7CF22FD53BD001EEB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4993E7D622FD53BD001EEB63;
+			remoteInfo = MultilevelMenuOC;
+		};
+		4993E7FB22FD53BF001EEB63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4993E7CF22FD53BD001EEB63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4993E7D622FD53BD001EEB63;
+			remoteInfo = MultilevelMenuOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4993E7D722FD53BD001EEB63 /* MultilevelMenuOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultilevelMenuOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4993E7DA22FD53BD001EEB63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4993E7DB22FD53BD001EEB63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4993E7DD22FD53BD001EEB63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4993E7DE22FD53BD001EEB63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4993E7E122FD53BD001EEB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4993E7E322FD53BF001EEB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4993E7E622FD53BF001EEB63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4993E7E822FD53BF001EEB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4993E7E922FD53BF001EEB63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4993E7EF22FD53BF001EEB63 /* MultilevelMenuOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4993E7F322FD53BF001EEB63 /* MultilevelMenuOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilevelMenuOCTests.m; sourceTree = "<group>"; };
+		4993E7F522FD53BF001EEB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4993E7FA22FD53BF001EEB63 /* MultilevelMenuOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultilevelMenuOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4993E7FE22FD53BF001EEB63 /* MultilevelMenuOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultilevelMenuOCUITests.m; sourceTree = "<group>"; };
+		4993E80022FD53BF001EEB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4993E84D22FD5BC8001EEB63 /* MultilevelMenuBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MultilevelMenuBundle.bundle; sourceTree = "<group>"; };
+		4993E84F22FD5BC8001EEB63 /* MenuDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDataModel.swift; sourceTree = "<group>"; };
+		4993E85022FD5BC8001EEB63 /* MultilevelMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelMenuOption.swift; sourceTree = "<group>"; };
+		4993E85122FD5BC8001EEB63 /* MultilevelStyle2Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStyle2Menu.swift; sourceTree = "<group>"; };
+		4993E85222FD5BC8001EEB63 /* MenuMarco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMarco.swift; sourceTree = "<group>"; };
+		4993E85322FD5BC8001EEB63 /* MultilevelMenuStyle1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelMenuStyle1View.swift; sourceTree = "<group>"; };
+		4993E85422FD5BC8001EEB63 /* MultilevelMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelMenuView.swift; sourceTree = "<group>"; };
+		4993E85522FD5BC8001EEB63 /* MultilevelMenuStyle2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelMenuStyle2View.swift; sourceTree = "<group>"; };
+		4993E85622FD5BC8001EEB63 /* MultilevelStlyeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStlyeMenu.swift; sourceTree = "<group>"; };
+		4993E85722FD5BC8001EEB63 /* MultilevelStyle1Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStyle1Menu.swift; sourceTree = "<group>"; };
+		4993E86622FD7065001EEB63 /* businessType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = businessType.json; path = ../../MultilevelMenuSwift/businessType.json; sourceTree = "<group>"; };
+		4993E87822FD8284001EEB63 /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
+		4993E87922FD8284001EEB63 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		4993E87A22FD8284001EEB63 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4993E87D22FD8284001EEB63 /* CustomMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4993E7D422FD53BD001EEB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4993E7EC22FD53BF001EEB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4993E7F722FD53BF001EEB63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4993E7CE22FD53BD001EEB63 = {
+			isa = PBXGroup;
+			children = (
+				4993E84B22FD5BC8001EEB63 /* MultilevelMenu */,
+				4993E7D922FD53BD001EEB63 /* MultilevelMenuOC */,
+				4993E7F222FD53BF001EEB63 /* MultilevelMenuOCTests */,
+				4993E7FD22FD53BF001EEB63 /* MultilevelMenuOCUITests */,
+				4993E7D822FD53BD001EEB63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4993E7D822FD53BD001EEB63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4993E7D722FD53BD001EEB63 /* MultilevelMenuOC.app */,
+				4993E7EF22FD53BF001EEB63 /* MultilevelMenuOCTests.xctest */,
+				4993E7FA22FD53BF001EEB63 /* MultilevelMenuOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4993E7D922FD53BD001EEB63 /* MultilevelMenuOC */ = {
+			isa = PBXGroup;
+			children = (
+				4993E87722FD8284001EEB63 /* CustomMenu */,
+				4993E86622FD7065001EEB63 /* businessType.json */,
+				4993E7DA22FD53BD001EEB63 /* AppDelegate.h */,
+				4993E7DB22FD53BD001EEB63 /* AppDelegate.m */,
+				4993E7DD22FD53BD001EEB63 /* ViewController.h */,
+				4993E7DE22FD53BD001EEB63 /* ViewController.m */,
+				4993E7E022FD53BD001EEB63 /* Main.storyboard */,
+				4993E7E322FD53BF001EEB63 /* Assets.xcassets */,
+				4993E7E522FD53BF001EEB63 /* LaunchScreen.storyboard */,
+				4993E7E822FD53BF001EEB63 /* Info.plist */,
+				4993E7E922FD53BF001EEB63 /* main.m */,
+			);
+			path = MultilevelMenuOC;
+			sourceTree = "<group>";
+		};
+		4993E7F222FD53BF001EEB63 /* MultilevelMenuOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				4993E7F322FD53BF001EEB63 /* MultilevelMenuOCTests.m */,
+				4993E7F522FD53BF001EEB63 /* Info.plist */,
+			);
+			path = MultilevelMenuOCTests;
+			sourceTree = "<group>";
+		};
+		4993E7FD22FD53BF001EEB63 /* MultilevelMenuOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4993E7FE22FD53BF001EEB63 /* MultilevelMenuOCUITests.m */,
+				4993E80022FD53BF001EEB63 /* Info.plist */,
+			);
+			path = MultilevelMenuOCUITests;
+			sourceTree = "<group>";
+		};
+		4993E84B22FD5BC8001EEB63 /* MultilevelMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4993E84C22FD5BC8001EEB63 /* Resources */,
+				4993E84E22FD5BC8001EEB63 /* Source */,
+			);
+			name = MultilevelMenu;
+			path = ../../MultilevelMenu;
+			sourceTree = "<group>";
+		};
+		4993E84C22FD5BC8001EEB63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4993E84D22FD5BC8001EEB63 /* MultilevelMenuBundle.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4993E84E22FD5BC8001EEB63 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4993E84F22FD5BC8001EEB63 /* MenuDataModel.swift */,
+				4993E85022FD5BC8001EEB63 /* MultilevelMenuOption.swift */,
+				4993E85122FD5BC8001EEB63 /* MultilevelStyle2Menu.swift */,
+				4993E85222FD5BC8001EEB63 /* MenuMarco.swift */,
+				4993E85322FD5BC8001EEB63 /* MultilevelMenuStyle1View.swift */,
+				4993E85422FD5BC8001EEB63 /* MultilevelMenuView.swift */,
+				4993E85522FD5BC8001EEB63 /* MultilevelMenuStyle2View.swift */,
+				4993E85622FD5BC8001EEB63 /* MultilevelStlyeMenu.swift */,
+				4993E85722FD5BC8001EEB63 /* MultilevelStyle1Menu.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4993E87722FD8284001EEB63 /* CustomMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4993E87822FD8284001EEB63 /* China.png */,
+				4993E87922FD8284001EEB63 /* CustomCell.xib */,
+				4993E87A22FD8284001EEB63 /* CustomCell.swift */,
+				4993E87D22FD8284001EEB63 /* CustomMenuView.swift */,
+			);
+			name = CustomMenu;
+			path = ../../MultilevelMenuSwift/CustomMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4993E7D622FD53BD001EEB63 /* MultilevelMenuOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4993E80322FD53BF001EEB63 /* Build configuration list for PBXNativeTarget "MultilevelMenuOC" */;
+			buildPhases = (
+				4993E7D322FD53BD001EEB63 /* Sources */,
+				4993E7D422FD53BD001EEB63 /* Frameworks */,
+				4993E7D522FD53BD001EEB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultilevelMenuOC;
+			productName = MultilevelMenuOC;
+			productReference = 4993E7D722FD53BD001EEB63 /* MultilevelMenuOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4993E7EE22FD53BF001EEB63 /* MultilevelMenuOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4993E80622FD53BF001EEB63 /* Build configuration list for PBXNativeTarget "MultilevelMenuOCTests" */;
+			buildPhases = (
+				4993E7EB22FD53BF001EEB63 /* Sources */,
+				4993E7EC22FD53BF001EEB63 /* Frameworks */,
+				4993E7ED22FD53BF001EEB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4993E7F122FD53BF001EEB63 /* PBXTargetDependency */,
+			);
+			name = MultilevelMenuOCTests;
+			productName = MultilevelMenuOCTests;
+			productReference = 4993E7EF22FD53BF001EEB63 /* MultilevelMenuOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4993E7F922FD53BF001EEB63 /* MultilevelMenuOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4993E80922FD53BF001EEB63 /* Build configuration list for PBXNativeTarget "MultilevelMenuOCUITests" */;
+			buildPhases = (
+				4993E7F622FD53BF001EEB63 /* Sources */,
+				4993E7F722FD53BF001EEB63 /* Frameworks */,
+				4993E7F822FD53BF001EEB63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4993E7FC22FD53BF001EEB63 /* PBXTargetDependency */,
+			);
+			name = MultilevelMenuOCUITests;
+			productName = MultilevelMenuOCUITests;
+			productReference = 4993E7FA22FD53BF001EEB63 /* MultilevelMenuOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4993E7CF22FD53BD001EEB63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = forwor;
+				TargetAttributes = {
+					4993E7D622FD53BD001EEB63 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4993E7EE22FD53BF001EEB63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4993E7D622FD53BD001EEB63;
+					};
+					4993E7F922FD53BF001EEB63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4993E7D622FD53BD001EEB63;
+					};
+				};
+			};
+			buildConfigurationList = 4993E7D222FD53BD001EEB63 /* Build configuration list for PBXProject "MultilevelMenuOC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4993E7CE22FD53BD001EEB63;
+			productRefGroup = 4993E7D822FD53BD001EEB63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4993E7D622FD53BD001EEB63 /* MultilevelMenuOC */,
+				4993E7EE22FD53BF001EEB63 /* MultilevelMenuOCTests */,
+				4993E7F922FD53BF001EEB63 /* MultilevelMenuOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4993E7D522FD53BD001EEB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4993E7E722FD53BF001EEB63 /* LaunchScreen.storyboard in Resources */,
+				4993E88022FD8284001EEB63 /* China.png in Resources */,
+				4993E88122FD8284001EEB63 /* CustomCell.xib in Resources */,
+				4993E85822FD5BC8001EEB63 /* MultilevelMenuBundle.bundle in Resources */,
+				4993E86722FD7065001EEB63 /* businessType.json in Resources */,
+				4993E7E422FD53BF001EEB63 /* Assets.xcassets in Resources */,
+				4993E7E222FD53BD001EEB63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4993E7ED22FD53BF001EEB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4993E7F822FD53BF001EEB63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4993E7D322FD53BD001EEB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4993E85B22FD5BC8001EEB63 /* MultilevelStyle2Menu.swift in Sources */,
+				4993E88222FD8284001EEB63 /* CustomCell.swift in Sources */,
+				4993E85E22FD5BC8001EEB63 /* MultilevelMenuView.swift in Sources */,
+				4993E7DF22FD53BD001EEB63 /* ViewController.m in Sources */,
+				4993E7EA22FD53BF001EEB63 /* main.m in Sources */,
+				4993E85A22FD5BC8001EEB63 /* MultilevelMenuOption.swift in Sources */,
+				4993E86022FD5BC8001EEB63 /* MultilevelStlyeMenu.swift in Sources */,
+				4993E85F22FD5BC8001EEB63 /* MultilevelMenuStyle2View.swift in Sources */,
+				4993E86122FD5BC8001EEB63 /* MultilevelStyle1Menu.swift in Sources */,
+				4993E85922FD5BC8001EEB63 /* MenuDataModel.swift in Sources */,
+				4993E7DC22FD53BD001EEB63 /* AppDelegate.m in Sources */,
+				4993E85D22FD5BC8001EEB63 /* MultilevelMenuStyle1View.swift in Sources */,
+				4993E85C22FD5BC8001EEB63 /* MenuMarco.swift in Sources */,
+				4993E88422FD8284001EEB63 /* CustomMenuView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4993E7EB22FD53BF001EEB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4993E7F422FD53BF001EEB63 /* MultilevelMenuOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4993E7F622FD53BF001EEB63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4993E7FF22FD53BF001EEB63 /* MultilevelMenuOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4993E7F122FD53BF001EEB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4993E7D622FD53BD001EEB63 /* MultilevelMenuOC */;
+			targetProxy = 4993E7F022FD53BF001EEB63 /* PBXContainerItemProxy */;
+		};
+		4993E7FC22FD53BF001EEB63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4993E7D622FD53BD001EEB63 /* MultilevelMenuOC */;
+			targetProxy = 4993E7FB22FD53BF001EEB63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4993E7E022FD53BD001EEB63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4993E7E122FD53BD001EEB63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4993E7E522FD53BF001EEB63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4993E7E622FD53BF001EEB63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4993E80122FD53BF001EEB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4993E80222FD53BF001EEB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4993E80422FD53BF001EEB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RJUJXP82S4;
+				INFOPLIST_FILE = MultilevelMenuOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shenzhiqiang.MultilevelMenuOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4993E80522FD53BF001EEB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RJUJXP82S4;
+				INFOPLIST_FILE = MultilevelMenuOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shenzhiqiang.MultilevelMenuOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4993E80722FD53BF001EEB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJUJXP82S4;
+				INFOPLIST_FILE = MultilevelMenuOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shenzhiqiang.MultilevelMenuOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultilevelMenuOC.app/MultilevelMenuOC";
+			};
+			name = Debug;
+		};
+		4993E80822FD53BF001EEB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJUJXP82S4;
+				INFOPLIST_FILE = MultilevelMenuOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shenzhiqiang.MultilevelMenuOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultilevelMenuOC.app/MultilevelMenuOC";
+			};
+			name = Release;
+		};
+		4993E80A22FD53BF001EEB63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJUJXP82S4;
+				INFOPLIST_FILE = MultilevelMenuOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shenzhiqiang.MultilevelMenuOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultilevelMenuOC;
+			};
+			name = Debug;
+		};
+		4993E80B22FD53BF001EEB63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJUJXP82S4;
+				INFOPLIST_FILE = MultilevelMenuOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shenzhiqiang.MultilevelMenuOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultilevelMenuOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4993E7D222FD53BD001EEB63 /* Build configuration list for PBXProject "MultilevelMenuOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4993E80122FD53BF001EEB63 /* Debug */,
+				4993E80222FD53BF001EEB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4993E80322FD53BF001EEB63 /* Build configuration list for PBXNativeTarget "MultilevelMenuOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4993E80422FD53BF001EEB63 /* Debug */,
+				4993E80522FD53BF001EEB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4993E80622FD53BF001EEB63 /* Build configuration list for PBXNativeTarget "MultilevelMenuOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4993E80722FD53BF001EEB63 /* Debug */,
+				4993E80822FD53BF001EEB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4993E80922FD53BF001EEB63 /* Build configuration list for PBXNativeTarget "MultilevelMenuOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4993E80A22FD53BF001EEB63 /* Debug */,
+				4993E80B22FD53BF001EEB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4993E7CF22FD53BD001EEB63 /* Project object */;
+}
