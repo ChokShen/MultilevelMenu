@@ -2,8 +2,8 @@
 //  MultilevelPicker.swift
 //  FWOMSMerchant
 //
-//  Created by forwor on 2018/5/10.
-//  Copyright © 2018年 forwor. All rights reserved.
+//  Created by ChokShen on 2018/5/10.
+//  Copyright © 2018年 shenzhiqiang. All rights reserved.
 //
 
 import UIKit

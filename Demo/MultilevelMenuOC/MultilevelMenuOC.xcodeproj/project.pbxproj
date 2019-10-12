@@ -26,10 +26,6 @@
 		4993E86022FD5BC8001EEB63 /* MultilevelStlyeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85622FD5BC8001EEB63 /* MultilevelStlyeMenu.swift */; };
 		4993E86122FD5BC8001EEB63 /* MultilevelStyle1Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E85722FD5BC8001EEB63 /* MultilevelStyle1Menu.swift */; };
 		4993E86722FD7065001EEB63 /* businessType.json in Resources */ = {isa = PBXBuildFile; fileRef = 4993E86622FD7065001EEB63 /* businessType.json */; };
-		4993E88022FD8284001EEB63 /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 4993E87822FD8284001EEB63 /* China.png */; };
-		4993E88122FD8284001EEB63 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4993E87922FD8284001EEB63 /* CustomCell.xib */; };
-		4993E88222FD8284001EEB63 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E87A22FD8284001EEB63 /* CustomCell.swift */; };
-		4993E88422FD8284001EEB63 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4993E87D22FD8284001EEB63 /* CustomMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,10 +73,6 @@
 		4993E85622FD5BC8001EEB63 /* MultilevelStlyeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStlyeMenu.swift; sourceTree = "<group>"; };
 		4993E85722FD5BC8001EEB63 /* MultilevelStyle1Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilevelStyle1Menu.swift; sourceTree = "<group>"; };
 		4993E86622FD7065001EEB63 /* businessType.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = businessType.json; path = ../../MultilevelMenuSwift/businessType.json; sourceTree = "<group>"; };
-		4993E87822FD8284001EEB63 /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
-		4993E87922FD8284001EEB63 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
-		4993E87A22FD8284001EEB63 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		4993E87D22FD8284001EEB63 /* CustomMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +124,6 @@
 		4993E7D922FD53BD001EEB63 /* MultilevelMenuOC */ = {
 			isa = PBXGroup;
 			children = (
-				4993E87722FD8284001EEB63 /* CustomMenu */,
 				4993E86622FD7065001EEB63 /* businessType.json */,
 				4993E7DA22FD53BD001EEB63 /* AppDelegate.h */,
 				4993E7DB22FD53BD001EEB63 /* AppDelegate.m */,
@@ -197,18 +188,6 @@
 				4993E85722FD5BC8001EEB63 /* MultilevelStyle1Menu.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		4993E87722FD8284001EEB63 /* CustomMenu */ = {
-			isa = PBXGroup;
-			children = (
-				4993E87822FD8284001EEB63 /* China.png */,
-				4993E87922FD8284001EEB63 /* CustomCell.xib */,
-				4993E87A22FD8284001EEB63 /* CustomCell.swift */,
-				4993E87D22FD8284001EEB63 /* CustomMenuView.swift */,
-			);
-			name = CustomMenu;
-			path = ../../MultilevelMenuSwift/CustomMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4993E7E722FD53BF001EEB63 /* LaunchScreen.storyboard in Resources */,
-				4993E88022FD8284001EEB63 /* China.png in Resources */,
-				4993E88122FD8284001EEB63 /* CustomCell.xib in Resources */,
 				4993E85822FD5BC8001EEB63 /* MultilevelMenuBundle.bundle in Resources */,
 				4993E86722FD7065001EEB63 /* businessType.json in Resources */,
 				4993E7E422FD53BF001EEB63 /* Assets.xcassets in Resources */,
@@ -346,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4993E85B22FD5BC8001EEB63 /* MultilevelStyle2Menu.swift in Sources */,
-				4993E88222FD8284001EEB63 /* CustomCell.swift in Sources */,
 				4993E85E22FD5BC8001EEB63 /* MultilevelMenuView.swift in Sources */,
 				4993E7DF22FD53BD001EEB63 /* ViewController.m in Sources */,
 				4993E7EA22FD53BF001EEB63 /* main.m in Sources */,
@@ -358,7 +334,6 @@
 				4993E7DC22FD53BD001EEB63 /* AppDelegate.m in Sources */,
 				4993E85D22FD5BC8001EEB63 /* MultilevelMenuStyle1View.swift in Sources */,
 				4993E85C22FD5BC8001EEB63 /* MenuMarco.swift in Sources */,
-				4993E88422FD8284001EEB63 /* CustomMenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

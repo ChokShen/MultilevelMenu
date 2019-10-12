@@ -2,8 +2,8 @@
 //  MultilevelMenuVariable.swift
 //  MultilevelMenuDemo
 //
-//  Created by shenzhiqiang on 2018/5/10.
-//  Copyright © 2018年 ChokShen. All rights reserved.
+//  Created by ChokShen on 2018/5/10.
+//  Copyright © 2018年 shenzhiqiang. All rights reserved.
 //
 
 import Foundation
