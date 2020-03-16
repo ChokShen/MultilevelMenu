@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MultilevelMenu"
-  s.version      = "1.3.1"
+  s.version      = "1.3.2"
   s.summary      = "MultilevelMenu"
   s.description  = "A custom multi-level menu/ address picker"
   s.homepage     = "https://github.com/ChokShen/MultilevelMenu"
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.resources = "MultilevelMenu/Resources/MultilevelMenuBundle.bundle"
   s.framework = 'Foundation', 'UIKit'
   s.requires_arc = true
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end
