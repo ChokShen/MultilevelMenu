@@ -66,12 +66,24 @@ for dict in array {
 }
 ```
 Show
+* Swift
+
 ```swift
 let menu = MultilevelStyle1Menu(title: "行业类型", dataSouce: dataSouce, completion:       { (resultString, model) in //'resultString' is combined with every level data that you have selected.'model' is the MenuDataModel that you have selected lastly.
     self.resultLabel.text = resultString
 })
 menu.show()
 ```
+* Objective-C
+
+```objective-c
+__weak typeof(self) weakSelf = self;
+MultilevelStyle1Menu *menu = [[MultilevelStyle1Menu alloc]initWithTitle:@"行业类型" dataSouce:dataSource option:nil customView:nil completion:^(NSString * text, MenuDataModel * model) {
+    weakSelf.resultLabel.text = text;
+}];
+[menu show];
+```
+
 Important Property
 ```swfit
 menu.allowSelectAnyLevelData = true 
@@ -112,6 +124,8 @@ class CustomMenuView: MultilevelMenuStyle2View {
 ![gif5](https://github.com/ChokShen/MultilevelMenu/raw/master/Screenshots/MultilevelStyle2Menu_Custom.gif)
 
 *Show
+* Swift
+
 ```swift
 var option = MultilevelMenuOption()
 option.rightBarButtonTitle = "ok"
@@ -121,6 +135,17 @@ let menu = MultilevelStyle2Menu(title: "请选择行业类型", dataSouce: dataS
     self.resultLabel.text = resultString
 })
 menu.show()
+```
+* Objective-C
+```objective-c
+MultilevelMenuOption *option = [[MultilevelMenuOption alloc]init];
+option.rightBarButtonTitle = @"ok";
+option.rightBarButtonColor = [UIColor redColor];
+__weak typeof(self) weakSelf = self;
+MultilevelStyle2Menu *menu = [[MultilevelStyle2Menu alloc] initWithTitle:@"请选择行业类型" fileUrl:url option:option customView:nil completion:^(NSString * text, MenuDataModel * model) {
+    weakSelf.resultLabel.text = text;
+}];
+[menu show];
 ```
 You also can creat MultilevelMenuOption to set menu custom properties.
 
