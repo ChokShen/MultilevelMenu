@@ -9,8 +9,8 @@ A custom multi-level menu/ address picker.
 
 ## Requirements 
 * iOS 8+
-* Xcode 10+
-* Swift 4.2+
+* Xcode 11+
+* Swift 5.0+
 
 ## Installation 
 ### 1.CocoaPods
