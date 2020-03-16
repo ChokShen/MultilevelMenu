@@ -27,7 +27,7 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
      public var option: MultilevelMenuOption = MultilevelMenuOption()
      var initialWidth: CGFloat {
         get {
-            return CSScreenW
+            return MMScreen.width
         }
     }
     
@@ -38,7 +38,7 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
     }
     
      lazy var animationView: UIView = {
-        let animationView = UIView(frame: CGRect(x: CSScreenW, y: 0, width: self.initialWidth, height: self.bounds.height))
+        let animationView = UIView(frame: CGRect(x: MMScreen.width, y: 0, width: self.initialWidth, height: self.bounds.height))
         animationView.backgroundColor = UIColor.white
         return animationView
     }()
@@ -49,6 +49,7 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
      var textLabel: UILabel!
      public var lastSelectedIndexPath: IndexPath?
     
+    // MARK: - init
     /// 便利初始化方法
     ///
     /// - Parameters:
@@ -80,6 +81,11 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
         self.init()
     }
     
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - ui
      func setUpLayOut() {
         self.tableView.frame = animationView.bounds
         animationView.addSubview(self.tableView)
@@ -92,12 +98,13 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
         tableView.backgroundColor = UIColor.white
     }
     
+    // MARK: - animation
      func popFromRightAnimation(_ completion: AnimationCompletionClosure? = nil) {
     }
     
      func hideAnimation(_ completion: AnimationCompletionClosure? = nil) {
         UIView.animate(withDuration: 0.5, animations: {
-            self.animationView.frame.origin.x = CSScreenW
+            self.animationView.frame.origin.x = MMScreen.width
         }) { (finished) in
             if finished {
                 self.removeFromSuperview()
@@ -107,11 +114,6 @@ open class MultilevelMenuView: UIView, UITableViewDelegate, UITableViewDataSourc
             }
         }
     }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     
     // MARK: - UITableViewDelegate & UITableViewDataSource
     open func numberOfSections(in tableView: UITableView) -> Int {

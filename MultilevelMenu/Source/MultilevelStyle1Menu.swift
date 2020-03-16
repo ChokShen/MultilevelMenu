@@ -22,17 +22,17 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         }
     }
     static let upperViewHeight: CGFloat = 44
-    static let height: CGFloat = 352
+    static let height: CGFloat = MMScreen.isFullScreen ? 352 + MMScreen.bottomSafeHeight : 352
     static let confirmButtonHeight: CGFloat = 44
     private var tableViewFrame: CGRect {
-        return CGRect(x: 0, y: MultilevelStyle1Menu.upperViewHeight, width: CSScreenW, height: MultilevelStyle1Menu.height - MultilevelStyle1Menu.upperViewHeight - MultilevelStyle1Menu.confirmButtonHeight)
+        return CGRect(x: 0, y: MultilevelStyle1Menu.upperViewHeight, width: MMScreen.width, height: MultilevelStyle1Menu.height - MultilevelStyle1Menu.upperViewHeight - MultilevelStyle1Menu.confirmButtonHeight - MMScreen.bottomSafeHeight)
     }
     private var firstMenuView: MultilevelMenuStyle1View!
     private var customMenuView: MultilevelMenuStyle1View?
     private var confirmButton: UIButton!
     private lazy var containerView: UIView  = {
         let containerView = UIView()
-        containerView.frame = CGRect(x: 0, y: 0, width: CSScreenW, height: CSScreenH - MultilevelStyle1Menu.height)
+        containerView.frame = CGRect(x: 0, y: 0, width: MMScreen.width, height: MMScreen.height - MultilevelStyle1Menu.height)
         containerView.backgroundColor = UIColor.protectedBackgroundColor
         containerView.isUserInteractionEnabled = true
         containerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.cancelAction)))
@@ -45,7 +45,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
                                   option: MultilevelMenuOption? = nil,
                                   customView: MultilevelMenuStyle1View? = nil,
                                   completion: SelectResultClosure?) {
-        self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: MultilevelStyle1Menu.height))
+        self.init(frame: CGRect(x: 0, y: MMScreen.height, width: MMScreen.width, height: MultilevelStyle1Menu.height))
         self.allDataSource = getDataSourceFromJsonFile(fileUrl)
         self.titleText = title
         if option != nil {
@@ -64,7 +64,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
                                   option: MultilevelMenuOption? = nil,
                                   customView: MultilevelMenuStyle1View? = nil,
                                   completion: SelectResultClosure?) {
-        self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: MultilevelStyle1Menu.height))
+        self.init(frame: CGRect(x: 0, y: MMScreen.height, width: MMScreen.width, height: MultilevelStyle1Menu.height))
         self.allDataSource = dataSouce
         self.titleText = title
         if option != nil {
@@ -115,7 +115,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         guard let window = UIApplication.shared.delegate?.window else { return }
         guard let currentWindow = window else { return }
         UIView.animate(withDuration: 0.3, animations: {
-            self.frame.origin = CGPoint(x: 0, y: CSScreenH - MultilevelStyle1Menu.height)
+            self.frame.origin = CGPoint(x: 0, y: MMScreen.height - MultilevelStyle1Menu.height)
             currentWindow.addSubview(self)
         }) { (finished) in
             if finished {
@@ -127,7 +127,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
     @objc override func cancelAction() {
         self.containerView.removeFromSuperview()
         UIView.animate(withDuration: 0.3, animations: {
-            self.frame.origin = CGPoint(x: 0, y: CSScreenH)
+            self.frame.origin = CGPoint(x: 0, y: MMScreen.height)
         }) { (finished) in
             if finished {
                 self.removeFromSuperview()
@@ -165,7 +165,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
     }
     
     private func layOutUpperView() {
-        upperBarView = UIView(frame: CGRect(x: 0, y: 0, width: CSScreenW, height: MultilevelStyle1Menu.upperViewHeight))
+        upperBarView = UIView(frame: CGRect(x: 0, y: 0, width: MMScreen.width, height: MultilevelStyle1Menu.upperViewHeight))
         upperBarView.backgroundColor = UIColor.white
         self.addSubview(upperBarView)
         
@@ -177,7 +177,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
         upperBarView.addSubview(reminderLabel)
         //滚动视图
         let scrollViewX = reminderLabel.frame.maxX + 15
-        scrollView = UIScrollView(frame: CGRect(x: scrollViewX, y: 0, width: CSScreenW - scrollViewX, height: upperBarView.frame.height - 0.5))
+        scrollView = UIScrollView(frame: CGRect(x: scrollViewX, y: 0, width: MMScreen.width - scrollViewX, height: upperBarView.frame.height - 0.5))
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.contentSize = CGSize(width: scrollView.frame.width, height: 0)
         upperBarView.addSubview(scrollView)
@@ -189,7 +189,7 @@ public class MultilevelStyle1Menu: MultilevelStlyeMenu, MultilevelMenuStlye1View
     
     private func layOutConfirmButton() {
         confirmButton = UIButton(type: .custom)
-        confirmButton.frame = CGRect(x: 0, y: tableViewFrame.maxY, width: CSScreenW, height: MultilevelStyle1Menu.confirmButtonHeight)
+        confirmButton.frame = CGRect(x: 0, y: tableViewFrame.maxY, width: MMScreen.width, height: MultilevelStyle1Menu.confirmButtonHeight)
         confirmButton.setTitle(self.defalutOption.bottomButtonTitle, for: .normal)
         confirmButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         confirmButton.setTitleColor(UIColor.white, for: .normal)

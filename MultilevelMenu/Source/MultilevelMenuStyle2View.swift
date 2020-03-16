@@ -17,7 +17,7 @@ open class MultilevelMenuStyle2View: MultilevelMenuView{
     
     override var initialWidth: CGFloat {
         get {
-            return CSScreenW - self.option.secondaryMenuWidth
+            return MMScreen.width - self.option.secondaryMenuWidth
         }
     }
     weak var delegate: MultilevelMenuStlye2ViewDelegate?
@@ -44,7 +44,7 @@ open class MultilevelMenuStyle2View: MultilevelMenuView{
     
     @objc func hideAnimation_ClickBackgroundView() {
         UIView.animate(withDuration: 0.5, animations: {
-            self.animationView.frame.origin.x = CSScreenW
+            self.animationView.frame.origin.x = MMScreen.width
         }) { (finished) in
             if finished {
                 self.backgroundView.removeFromSuperview()
@@ -56,7 +56,7 @@ open class MultilevelMenuStyle2View: MultilevelMenuView{
     
    func hideAnimation_ClickButton(_ completion: AnimationCompletionClosure? = nil) {
         UIView.animate(withDuration: 0.5, animations: {
-            self.animationView.frame.origin.x = CSScreenW
+            self.animationView.frame.origin.x = MMScreen.width
         }) { (finished) in
             if finished {
                 self.backgroundView.removeFromSuperview()
@@ -73,7 +73,7 @@ open class MultilevelMenuStyle2View: MultilevelMenuView{
             self.animationView.frame.origin.x = 0
         }) { (finished) in
             if finished {
-                self.animationView.frame.size = CGSize(width: CSScreenW, height: self.bounds.height)
+                self.animationView.frame.size = CGSize(width: MMScreen.width, height: self.bounds.height)
                 self.tableView.frame.size = CGSize(width: self.animationView.bounds.width, height: self.tableView.bounds.height)
             }
         }
@@ -83,11 +83,5 @@ open class MultilevelMenuStyle2View: MultilevelMenuView{
         super.tableView(tableView, didSelectRowAt: indexPath)
         delegate?.didSelectRow(self, indexPath.row, dataSouce[indexPath.row])
     }
-    /*
-     // Only override draw() if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
-     */
+    
 }

@@ -23,7 +23,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     }
     static let upperViewHeight: CGFloat = 44
     private var defalutFrame: CGRect {
-        return CGRect(x: 0, y: CSStatusBarHeight + CSNavigationBarHeight + MultilevelStyle2Menu.upperViewHeight, width: CSScreenW, height: CSScreenH - CSStatusBarHeight - CSNavigationBarHeight - MultilevelStyle2Menu.upperViewHeight)
+        return CGRect(x: 0, y: MMScreen.navigationHeight + MultilevelStyle2Menu.upperViewHeight, width: MMScreen.width, height: MMScreen.height - MMScreen.navigationHeight - MultilevelStyle2Menu.upperViewHeight)
     }
     private var firstMenuView: MultilevelMenuStyle2View!
     private var customMenuView: MultilevelMenuStyle2View?
@@ -46,7 +46,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
                                   option: MultilevelMenuOption? = nil,
                                   customView: MultilevelMenuStyle2View? = nil,
                                   completion: SelectResultClosure?) {
-        self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: CSScreenH))
+        self.init(frame: CGRect(x: 0, y: MMScreen.height, width: MMScreen.width, height: MMScreen.height))
         self.allDataSource = getDataSourceFromJsonFile(fileUrl)
         self.titleText = title
         if option != nil {
@@ -73,7 +73,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
                                   option: MultilevelMenuOption? = nil,
                                   customView: MultilevelMenuStyle2View? = nil,
                                   completion: SelectResultClosure?) {
-        self.init(frame: CGRect(x: 0, y: CSScreenH, width: CSScreenW, height: CSScreenH))
+        self.init(frame: CGRect(x: 0, y: MMScreen.height, width: MMScreen.width, height: MMScreen.height))
         self.allDataSource = dataSouce
         self.titleText = title
         if option != nil {
@@ -138,20 +138,20 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     
     private func layOutCustomStatusBar() {
         //自定义状态栏
-        let statusBar = UIView(frame: CGRect(x: 0, y: 0, width: CSScreenW, height: CSStatusBarHeight))
+        let statusBar = UIView(frame: CGRect(x: 0, y: 0, width: MMScreen.width, height: MMScreen.statusBarHeight))
         statusBar.backgroundColor = defalutOption.navigationBarColor
         self.addSubview(statusBar)
     }
     
     private func layOutCustomNavigationBar() {
         //自定义导航栏
-        navigationBar = UIView(frame: CGRect(x: 0, y: CSStatusBarHeight, width: CSScreenW, height: CSNavigationBarHeight))
+        navigationBar = UIView(frame: CGRect(x: 0, y: MMScreen.statusBarHeight, width: MMScreen.width, height: MMScreen.navigationBarHeight))
         navigationBar.backgroundColor = defalutOption.navigationBarColor
         self.addSubview(navigationBar)
         let leftEdge: CGFloat = 15
         //1.确定按钮
         confirmButton = UIButton(type: .custom)
-        confirmButton.frame = CGRect(x: CSScreenW - leftEdge - 50, y: (navigationBar.frame.height - 30) / 2, width: 50, height: 30)
+        confirmButton.frame = CGRect(x: MMScreen.width - leftEdge - 50, y: (navigationBar.frame.height - 30) / 2, width: 50, height: 30)
         confirmButton.contentHorizontalAlignment = .right
         confirmButton.setTitle(self.defalutOption.rightBarButtonTitle, for: .normal)
         confirmButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
@@ -168,7 +168,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
         cancelButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         navigationBar.addSubview(cancelButton)
         //3.标题
-        titltLabel = UILabel(frame: CGRect(x: cancelButton.frame.maxX + leftEdge, y: (navigationBar.frame.height - 30) / 2, width: CSScreenW - confirmButton.frame.width - cancelButton.frame.width - 4 * leftEdge , height: 30))
+        titltLabel = UILabel(frame: CGRect(x: cancelButton.frame.maxX + leftEdge, y: (navigationBar.frame.height - 30) / 2, width: MMScreen.width - confirmButton.frame.width - cancelButton.frame.width - 4 * leftEdge , height: 30))
         titltLabel.textAlignment = .center
         titltLabel.font = UIFont.boldSystemFont(ofSize: 18)
         titltLabel.textColor = defalutOption.navigationTitleColor
@@ -185,7 +185,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     }
     
     private func layOutUpperView() {
-        upperBarView = UIView(frame: CGRect(x: 0, y: navigationBar.frame.maxY, width: CSScreenW, height: MultilevelStyle2Menu.upperViewHeight))
+        upperBarView = UIView(frame: CGRect(x: 0, y: navigationBar.frame.maxY, width: MMScreen.width, height: MultilevelStyle2Menu.upperViewHeight))
         upperBarView.backgroundColor = UIColor.white
         self.addSubview(upperBarView)
         
@@ -195,12 +195,12 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
         reminderLabel.textColor = defalutOption.upperBarLeftTextColor
         upperBarView.addSubview(reminderLabel)
         let scrollViewX = reminderLabel.frame.maxX
-        scrollView = UIScrollView(frame: CGRect(x: scrollViewX, y: 0, width: CSScreenW - scrollViewX, height: upperBarView.frame.height - 1))
+        scrollView = UIScrollView(frame: CGRect(x: scrollViewX, y: 0, width: MMScreen.width - scrollViewX, height: upperBarView.frame.height - 1))
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.contentSize = CGSize(width: scrollView.frame.width, height: 0)
         upperBarView.addSubview(scrollView)
         
-        let seperatorLine = UILabel(frame: CGRect(x: 0, y: reminderLabel.frame.maxY, width: CSScreenW, height: 1))
+        let seperatorLine = UILabel(frame: CGRect(x: 0, y: reminderLabel.frame.maxY, width: MMScreen.width, height: 1))
         seperatorLine.backgroundColor = UIColor.ColorFromRGB(rgbValue: 0xE1E1E1)
         upperBarView.addSubview(seperatorLine)
     }
@@ -233,7 +233,7 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
     
     @objc override func cancelAction() {
         UIView.animate(withDuration: 0.3, animations: {
-            self.frame.origin = CGPoint(x: 0, y: CSScreenH)
+            self.frame.origin = CGPoint(x: 0, y: MMScreen.height)
         }) { (finished) in
             if finished {
                 self.removeFromSuperview()
@@ -327,13 +327,5 @@ public class MultilevelStyle2Menu: MultilevelStlyeMenu, MultilevelMenuStlye2View
         currentButton = scrollView.viewWithTag(currentLevel + 200) as? UIButton
         hasNextLevel = true
     }
-    
-    /*
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

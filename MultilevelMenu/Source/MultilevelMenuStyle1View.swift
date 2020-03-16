@@ -30,7 +30,7 @@ open class MultilevelMenuStyle1View: MultilevelMenuView {
     
     override func hideAnimation(_ completion: AnimationCompletionClosure? = nil) {
         UIView.animate(withDuration: 0.5, animations: {
-            self.animationView.frame.origin.x = CSScreenW
+            self.animationView.frame.origin.x = MMScreen.width
         }) { (finished) in
             if finished {
                 self.removeFromSuperview()
